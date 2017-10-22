@@ -1,0 +1,19 @@
+Item:
+  num: 436
+  name: Opa-Opa
+  type: Mag
+  cost: 6
+  hp: 9
+  ap: 4
+  tp: 4
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - AerialStatus
+    - Mag

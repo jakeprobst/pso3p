@@ -1,0 +1,22 @@
+Action:
+  num: 195
+  name: Technique
+  type: Attack
+  cost: 1
+  hp: 0
+  ap: 0
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Purple
+  toplink:
+    - Green
+  rightlink:
+    - Yellow
+  ability:
+    - TechEnable

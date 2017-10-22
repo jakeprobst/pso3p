@@ -1,0 +1,26 @@
+Monster:
+  num: 496
+  name: Sinow Spigell
+  type: Machine
+  cost: 5
+  hp: 11
+  ap: 5
+  tp: 3
+  mv: 9
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - APSilence
+    - HPAssist
+    - Warp

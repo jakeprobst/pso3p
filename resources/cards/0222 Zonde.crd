@@ -1,0 +1,21 @@
+Action:
+  num: 222
+  name: Zonde
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  leftlink:
+    - Yellow
+  toplink:
+    - Yellow
+  rightlink: []
+  ability: []

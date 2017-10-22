@@ -1,0 +1,24 @@
+Action:
+  num: 174
+  name: Heavy Blow
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Red
+    - Green
+  rightlink:
+    - Blue
+    - Red
+  ability:
+    - APSilence

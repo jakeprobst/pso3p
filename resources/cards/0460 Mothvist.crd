@@ -1,0 +1,21 @@
+Monster:
+  num: 460
+  name: Mothvist
+  type: Native
+  cost: 3
+  hp: 11
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - Summon
+    - APAssist
+    - Haste

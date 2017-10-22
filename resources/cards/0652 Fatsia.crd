@@ -1,0 +1,25 @@
+Item:
+  num: 652
+  name: Fatsia
+  type: Cane
+  cost: 3
+  hp: 4
+  ap: 1
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPPower
+    - Immobile

@@ -1,0 +1,26 @@
+Item:
+  num: 291
+  name: Heaven Punisher
+  type: Sword
+  cost: 7
+  hp: 20
+  ap: 5
+  tp: 5
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Revenge
+    - BigSwing

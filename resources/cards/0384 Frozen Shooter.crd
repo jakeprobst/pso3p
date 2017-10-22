@@ -1,0 +1,23 @@
+Item:
+  num: 384
+  name: Frozen Shooter
+  type: Gun
+  cost: 3
+  hp: 8
+  ap: 0
+  tp: 3
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Green
+  rightlink: []
+  ability:
+    - FrozenTarget
+    - Freeze

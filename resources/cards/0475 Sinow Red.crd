@@ -1,0 +1,26 @@
+Monster:
+  num: 475
+  name: Sinow Red
+  type: Machine
+  cost: 5
+  hp: 11
+  ap: 7
+  tp: 3
+  mv: 5
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - SwordDemolisher
+    - APAssist
+    - BattleRecovery

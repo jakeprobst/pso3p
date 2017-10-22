@@ -1,0 +1,26 @@
+Monster:
+  num: 503
+  name: Delbiter
+  type: Dark
+  cost: 7
+  hp: 25
+  ap: 13
+  tp: 5
+  mv: 6
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MajorRampage
+    - BigSwing

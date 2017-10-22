@@ -1,0 +1,22 @@
+Action:
+  num: 228
+  name: Grants
+  type: Attack
+  cost: 6
+  hp: 0
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Yellow
+  toplink:
+    - Yellow
+    - Orange
+  rightlink: []
+  ability:
+    - Pierce

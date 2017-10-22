@@ -1,0 +1,21 @@
+Action:
+  num: 547
+  name: GN Guard
+  type: Defense
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability:
+    - GunShield

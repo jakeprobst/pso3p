@@ -1,0 +1,27 @@
+Character:
+  num: 286
+  name: K.C.
+  type: Arkz
+  class: RAmar
+  hp: 3
+  ap: 2
+  tp: 1
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - FixedRange
+    - EXPBonus

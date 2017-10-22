@@ -1,0 +1,19 @@
+Item:
+  num: 425
+  name: Shifta Merge
+  type: Shield
+  cost: 3
+  hp: 8
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - AbilityRise

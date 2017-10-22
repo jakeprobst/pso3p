@@ -1,0 +1,8 @@
+Assist:
+  num: 333
+  name: Squeeze
+  cost: 3
+  time: 1
+  target: Self
+  ability:
+    - RandomAssist

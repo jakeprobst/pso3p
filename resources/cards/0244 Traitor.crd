@@ -1,0 +1,20 @@
+Action:
+  num: 244
+  name: Traitor
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 5
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink: []
+  rightlink: []
+  ability:
+    - Traitor

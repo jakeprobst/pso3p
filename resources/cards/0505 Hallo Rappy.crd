@@ -1,0 +1,23 @@
+Monster:
+  num: 505
+  name: Hallo Rappy
+  type: Native
+  cost: 4
+  hp: 6
+  ap: 4
+  tp: 5
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - ContactHalfguard

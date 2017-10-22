@@ -1,0 +1,21 @@
+Action:
+  num: 210
+  name: Defender
+  type: Defense
+  cost: 1
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability:
+    - Decoy

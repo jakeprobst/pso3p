@@ -1,0 +1,19 @@
+Item:
+  num: 448
+  name: Nidra
+  type: Mag
+  cost: 5
+  hp: 11
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - DefenderAPGrowth
+    - Mag

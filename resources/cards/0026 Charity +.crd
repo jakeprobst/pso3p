@@ -1,0 +1,8 @@
+Assist:
+  num: 26
+  name: Charity +
+  cost: 4
+  time: 4
+  target: Self
+  ability:
+    - DiceMinus

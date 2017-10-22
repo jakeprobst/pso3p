@@ -1,0 +1,26 @@
+Item:
+  num: 389
+  name: Baranz Launcher
+  type: Gun
+  cost: 5
+  hp: 8
+  ap: 4
+  tp: 1
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - DeathCompanion
+    - Return

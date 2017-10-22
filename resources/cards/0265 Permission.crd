@@ -1,0 +1,8 @@
+Assist:
+  num: 265
+  name: Permission
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - TechEnable

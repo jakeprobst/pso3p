@@ -1,0 +1,28 @@
+Monster:
+  num: 502
+  name: Morfos
+  type: Dark
+  cost: 5
+  hp: 9
+  ap: 5
+  tp: 5
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MajorHalfguard
+    - WeakHitBlock
+    - Haste

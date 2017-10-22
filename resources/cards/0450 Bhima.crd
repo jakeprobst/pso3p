@@ -1,0 +1,19 @@
+Item:
+  num: 450
+  name: Bhima
+  type: Mag
+  cost: 5
+  hp: 8
+  ap: 2
+  tp: 3
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - EXPDecoy
+    - Mag

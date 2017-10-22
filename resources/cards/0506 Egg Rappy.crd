@@ -1,0 +1,26 @@
+Monster:
+  num: 506
+  name: Egg Rappy
+  type: Native
+  cost: 6
+  hp: 11
+  ap: 5
+  tp: 5
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Filial
+    - DEFCost2Disable
+    - ATKDiceBoost

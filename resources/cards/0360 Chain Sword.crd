@@ -1,0 +1,25 @@
+Item:
+  num: 360
+  name: Chain Sword
+  type: Sword
+  cost: 5
+  hp: 13
+  ap: 4
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - HeavyItem
+    - MajorSlayer
+    - AbilityTrap

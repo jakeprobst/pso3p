@@ -1,0 +1,19 @@
+Item:
+  num: 423
+  name: Tripolic Shield
+  type: Shield
+  cost: 4
+  hp: 12
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - MinorHalfguard

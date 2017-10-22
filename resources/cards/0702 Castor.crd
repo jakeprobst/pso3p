@@ -1,0 +1,26 @@
+Boss:
+  num: 702
+  name: Castor
+  hp: 15
+  ap: 6
+  tp: 6
+  mv: 5
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Castor
+  ability:
+    - AntiAbnormality
+    - CarnageUninclined
+    - Haste
+    - SteadyDamageMod

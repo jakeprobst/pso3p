@@ -1,0 +1,26 @@
+Monster:
+  num: 701
+  name: Del Rappy
+  type: Dark
+  cost: 7
+  hp: 30
+  ap: 0
+  tp: 3
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - AllyBonus
+    - Rampage

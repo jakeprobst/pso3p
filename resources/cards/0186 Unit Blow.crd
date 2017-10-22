@@ -1,0 +1,22 @@
+Action:
+  num: 186
+  name: Unit Blow
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink:
+    - Red
+  ability:
+    - FocusedAssault

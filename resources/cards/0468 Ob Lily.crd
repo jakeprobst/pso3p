@@ -1,0 +1,26 @@
+Monster:
+  num: 468
+  name: Ob Lily
+  type: ABeast
+  cost: 2
+  hp: 3
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MinorDeath

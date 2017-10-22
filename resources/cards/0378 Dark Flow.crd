@@ -1,0 +1,21 @@
+Item:
+  num: 378
+  name: Dark Flow
+  type: Sword
+  cost: 7
+  hp: 22
+  ap: 8
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - BigSwing
+    - DeathCompanion
+    - EnemyBonus

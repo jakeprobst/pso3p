@@ -1,0 +1,20 @@
+Action:
+  num: 204
+  name: Reduction
+  type: Defense
+  cost: 2
+  hp: 255
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - ContactHalfguard

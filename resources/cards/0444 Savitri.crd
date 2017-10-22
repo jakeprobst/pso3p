@@ -1,0 +1,19 @@
+Item:
+  num: 444
+  name: Savitri
+  type: Mag
+  cost: 5
+  hp: 8
+  ap: 3
+  tp: 1
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - ActionDisrupter
+    - Mag

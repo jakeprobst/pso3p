@@ -1,0 +1,26 @@
+Item:
+  num: 607
+  name: Stag Cutlery
+  type: Sword
+  cost: 3
+  hp: 3
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MajorRampage
+    - FrozenDeath

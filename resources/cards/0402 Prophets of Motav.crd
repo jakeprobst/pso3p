@@ -1,0 +1,25 @@
+Item:
+  num: 402
+  name: Prophets of Motav
+  type: Cane
+  cost: 6
+  hp: 13
+  ap: 2
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPGrowth
+    - AbilityTrap

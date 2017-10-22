@@ -1,0 +1,20 @@
+Action:
+  num: 141
+  name: Heavy Slash
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 4
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink: []
+  ability: []

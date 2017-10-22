@@ -1,0 +1,8 @@
+Assist:
+  num: 307
+  name: Requiem
+  cost: 2
+  time: 1
+  target: Self
+  ability:
+    - Requiem

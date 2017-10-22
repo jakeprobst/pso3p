@@ -1,0 +1,24 @@
+Action:
+  num: 231
+  name: Estlla
+  type: PhotonBlast
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 4
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - +++
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink:
+    - Yellow
+    - Orange
+  rightlink: []
+  ability:
+    - Pierce

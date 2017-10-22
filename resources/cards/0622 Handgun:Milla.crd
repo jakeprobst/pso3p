@@ -1,0 +1,25 @@
+Item:
+  num: 622
+  name: Handgun:Milla
+  type: Gun
+  cost: 4
+  hp: 7
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Drain
+    - Combo

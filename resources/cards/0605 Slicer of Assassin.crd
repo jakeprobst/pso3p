@@ -1,0 +1,25 @@
+Item:
+  num: 605
+  name: Slicer of Assassin
+  type: Sword
+  cost: 2
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - MinorDeath

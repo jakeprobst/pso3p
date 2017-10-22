@@ -1,0 +1,26 @@
+Item:
+  num: 633
+  name: Justy-23ST
+  type: Gun
+  cost: 3
+  hp: 5
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Inherit
+    - MachineInfluence

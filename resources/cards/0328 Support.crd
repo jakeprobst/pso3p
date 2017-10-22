@@ -1,0 +1,8 @@
+Assist:
+  num: 328
+  name: Support
+  cost: 4
+  time: 6
+  target: Team
+  ability:
+    - AllySCAPBoost

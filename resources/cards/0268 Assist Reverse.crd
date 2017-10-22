@@ -1,0 +1,8 @@
+Assist:
+  num: 268
+  name: Assist Reverse
+  cost: 1
+  time: 255
+  target: Everyone
+  ability:
+    - AssistReverse

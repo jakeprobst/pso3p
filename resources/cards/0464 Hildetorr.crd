@@ -1,0 +1,26 @@
+Monster:
+  num: 464
+  name: Hildetorr
+  type: Native
+  cost: 6
+  hp: 14
+  ap: 8
+  tp: 3
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BattleRecovery
+    - TechHalfguard
+    - Haste

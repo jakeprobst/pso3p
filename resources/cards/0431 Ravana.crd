@@ -1,0 +1,20 @@
+Item:
+  num: 431
+  name: Ravana
+  type: Mag
+  cost: 2
+  hp: 1
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - TPLoss
+    - WeakHitBlock
+    - Mag

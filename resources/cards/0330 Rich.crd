@@ -1,0 +1,8 @@
+Assist:
+  num: 330
+  name: Rich
+  cost: 1
+  time: 255
+  target: Everyone
+  ability:
+    - BigHand

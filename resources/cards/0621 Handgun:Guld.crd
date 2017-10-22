@@ -1,0 +1,26 @@
+Item:
+  num: 621
+  name: Handgun:Guld
+  type: Gun
+  cost: 4
+  hp: 9
+  ap: 2
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TechHalfguard
+    - Combo

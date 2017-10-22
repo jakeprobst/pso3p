@@ -1,0 +1,8 @@
+Assist:
+  num: 269
+  name: Stamina
+  cost: 3
+  time: 8
+  target: Everyone
+  ability:
+    - MV9

@@ -1,0 +1,8 @@
+Assist:
+  num: 267
+  name: Legacy
+  cost: 2
+  time: 1
+  target: Self
+  ability:
+    - Legacy

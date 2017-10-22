@@ -1,0 +1,8 @@
+Assist:
+  num: 304
+  name: God Whim
+  cost: 2
+  time: 1
+  target: Everyone
+  ability:
+    - AssistChange

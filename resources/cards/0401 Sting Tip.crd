@@ -1,0 +1,25 @@
+Item:
+  num: 401
+  name: Sting Tip
+  type: Cane
+  cost: 3
+  hp: 5
+  ap: 2
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - CardBack

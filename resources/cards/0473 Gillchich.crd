@@ -1,0 +1,19 @@
+Monster:
+  num: 473
+  name: Gillchich
+  type: Machine
+  cost: 3
+  hp: 6
+  ap: 3
+  tp: 0
+  mv: 1
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - LimitedAction
+    - HighcostSlayer

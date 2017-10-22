@@ -1,0 +1,22 @@
+Monster:
+  num: 493
+  name: Dolmolm
+  type: ABeast
+  cost: 4
+  hp: 9
+  ap: 1
+  tp: 1
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Pierce
+    - Revenge

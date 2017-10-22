@@ -1,0 +1,24 @@
+Item:
+  num: 364
+  name: Monkey King Bar
+  type: Sword
+  cost: 4
+  hp: 12
+  ap: 1
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - APGrowth

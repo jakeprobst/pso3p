@@ -1,0 +1,24 @@
+Item:
+  num: 657
+  name: The Sigh of a God
+  type: Cane
+  cost: 4
+  hp: 7
+  ap: 2
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MinorHalfguard

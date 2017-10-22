@@ -1,0 +1,25 @@
+Item:
+  num: 637
+  name: MA60 Vise
+  type: Gun
+  cost: 2
+  hp: 3
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - TPLoss
+    - Explosion

@@ -1,0 +1,28 @@
+Item:
+  num: 629
+  name: Snow Queen
+  type: Gun
+  cost: 5
+  hp: 10
+  ap: 0
+  tp: 4
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Green
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - FrozenTarget
+    - Freeze

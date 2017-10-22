@@ -1,0 +1,26 @@
+Monster:
+  num: 112
+  name: Canane
+  type: Machine
+  cost: 3
+  hp: 6
+  ap: 2
+  tp: 4
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - AerialAssassin
+    - Leader
+    - Aerial

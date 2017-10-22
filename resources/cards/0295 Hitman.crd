@@ -1,0 +1,8 @@
+Assist:
+  num: 295
+  name: Hitman
+  cost: 2
+  time: 1
+  target: Self
+  ability:
+    - FCTrash

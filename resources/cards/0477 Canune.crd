@@ -1,0 +1,26 @@
+Monster:
+  num: 477
+  name: Canune
+  type: Machine
+  cost: 4
+  hp: 10
+  ap: 0
+  tp: 5
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Dash
+    - MachineAPCount
+    - Aerial

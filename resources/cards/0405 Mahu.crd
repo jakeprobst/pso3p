@@ -1,0 +1,25 @@
+Item:
+  num: 405
+  name: Mahu
+  type: Cane
+  cost: 3
+  hp: 4
+  ap: 1
+  tp: 2
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPGrowth

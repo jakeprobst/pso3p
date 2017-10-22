@@ -1,0 +1,20 @@
+Action:
+  num: 232
+  name: Farlla
+  type: PhotonBlast
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 4
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  leftlink:
+    - Orange
+  toplink:
+    - Yellow
+  rightlink: []
+  ability: []

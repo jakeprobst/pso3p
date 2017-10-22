@@ -1,0 +1,8 @@
+Assist:
+  num: 289
+  name: Skip Act
+  cost: 3
+  time: 2
+  target: Everyone
+  ability:
+    - SkipAct

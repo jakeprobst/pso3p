@@ -1,0 +1,24 @@
+Item:
+  num: 353
+  name: Rappy's Fan
+  type: Sword
+  cost: 3
+  hp: 4
+  ap: 1
+  tp: 4
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - FullHeal

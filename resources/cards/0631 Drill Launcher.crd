@@ -1,0 +1,21 @@
+Item:
+  num: 631
+  name: Drill Launcher
+  type: Gun
+  cost: 3
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - MajorPierce

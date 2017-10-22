@@ -1,0 +1,26 @@
+Item:
+  num: 412
+  name: Hildeblue's Cane
+  type: Cane
+  cost: 4
+  hp: 7
+  ap: 1
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPPower
+    - NativeSlayer
+    - Freeze

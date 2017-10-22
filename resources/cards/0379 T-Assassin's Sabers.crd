@@ -1,0 +1,26 @@
+Item:
+  num: 379
+  name: T-Assassin's Sabers
+  type: Sword
+  cost: 3
+  hp: 5
+  ap: 1
+  tp: 1
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +--
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ABeastSlayer
+    - Paralysis

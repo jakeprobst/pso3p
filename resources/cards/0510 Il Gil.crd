@@ -1,0 +1,26 @@
+Monster:
+  num: 510
+  name: Il Gil
+  type: Dark
+  cost: 5
+  hp: 11
+  ap: 9
+  tp: 5
+  mv: 4
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Artifice
+    - WeakSpot
+    - Immobile

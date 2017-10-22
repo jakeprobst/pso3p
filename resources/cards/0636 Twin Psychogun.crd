@@ -1,0 +1,26 @@
+Item:
+  num: 636
+  name: Twin Psychogun
+  type: Gun
+  cost: 4
+  hp: 7
+  ap: 1
+  tp: 5
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - DarkSlayer
+    - TPPower
+    - TPPower

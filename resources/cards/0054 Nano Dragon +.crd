@@ -1,0 +1,27 @@
+Monster:
+  num: 54
+  name: Nano Dragon +
+  type: ABeast
+  cost: 4
+  hp: 10
+  ap: 0
+  tp: 2
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Pierce
+    - APSilence

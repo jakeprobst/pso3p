@@ -1,0 +1,21 @@
+Action:
+  num: 192
+  name: Curse
+  type: Attack
+  cost: 1
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Green
+  toplink:
+    - Green
+  rightlink: []
+  ability:
+    - Curse

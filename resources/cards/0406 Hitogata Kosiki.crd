@@ -1,0 +1,25 @@
+Item:
+  num: 406
+  name: Hitogata Kosiki
+  type: Cane
+  cost: 6
+  hp: 12
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - RandomTP

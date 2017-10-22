@@ -1,0 +1,26 @@
+Monster:
+  num: 127
+  name: Chaos Bringer
+  type: Dark
+  cost: 5
+  hp: 13
+  ap: 2
+  tp: 0
+  mv: 4
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ImpactHalfguard
+    - Revenge
+    - Stall

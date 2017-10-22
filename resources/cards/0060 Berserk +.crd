@@ -1,0 +1,22 @@
+Action:
+  num: 60
+  name: Berserk +
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 255
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Green
+  toplink:
+    - Red
+    - Purple
+  rightlink: []
+  ability:
+    - Berserk

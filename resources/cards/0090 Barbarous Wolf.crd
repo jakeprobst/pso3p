@@ -1,0 +1,24 @@
+Monster:
+  num: 90
+  name: Barbarous Wolf
+  type: Native
+  cost: 3
+  hp: 8
+  ap: 1
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Leader
+    - Stall

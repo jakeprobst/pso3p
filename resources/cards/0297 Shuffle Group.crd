@@ -1,0 +1,8 @@
+Assist:
+  num: 297
+  name: Shuffle Group
+  cost: 2
+  time: 1
+  target: Team
+  ability:
+    - Shuffle

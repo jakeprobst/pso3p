@@ -1,0 +1,22 @@
+Item:
+  num: 28
+  name: Sonic Knuckle +
+  type: Sword
+  cost: 4
+  hp: 6
+  ap: 0
+  tp: 6
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink: []
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - DefenseDisable

@@ -1,0 +1,21 @@
+Item:
+  num: 386
+  name: Guld Milla
+  type: Gun
+  cost: 6
+  hp: 10
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - TripleStrike

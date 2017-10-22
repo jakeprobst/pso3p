@@ -1,0 +1,24 @@
+Item:
+  num: 366
+  name: Tsumikiri J-Sword
+  type: Sword
+  cost: 6
+  hp: 14
+  ap: 5
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - EnemyBonus
+    - Heal

@@ -1,0 +1,26 @@
+Item:
+  num: 46
+  name: Oroti Agito
+  type: Sword
+  cost: 6
+  hp: 16
+  ap: 0
+  tp: 5
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Focus
+    - Exhaust
+    - ImpactHalfguard

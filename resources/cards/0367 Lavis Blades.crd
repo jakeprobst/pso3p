@@ -1,0 +1,20 @@
+Item:
+  num: 367
+  name: Lavis Blades
+  type: Sword
+  cost: 6
+  hp: 16
+  ap: 3
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - WeakSpot
+    - DoubleStrike

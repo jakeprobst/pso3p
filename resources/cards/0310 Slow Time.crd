@@ -1,0 +1,8 @@
+Assist:
+  num: 310
+  name: Slow Time
+  cost: 2
+  time: 1
+  target: Everyone
+  ability:
+    - EffectTimex2

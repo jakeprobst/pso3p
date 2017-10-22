@@ -1,0 +1,8 @@
+Assist:
+  num: 316
+  name: Snail Pace
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - MV1

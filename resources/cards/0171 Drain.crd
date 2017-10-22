@@ -1,0 +1,22 @@
+Action:
+  num: 171
+  name: Drain
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Red
+    - Green
+  rightlink: []
+  ability:
+    - Drain

@@ -1,0 +1,25 @@
+Item:
+  num: 399
+  name: Ice Staff Dagon
+  type: Cane
+  cost: 3
+  hp: 6
+  ap: 1
+  tp: 3
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Freeze
+    - Freeze

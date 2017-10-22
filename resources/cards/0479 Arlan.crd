@@ -1,0 +1,25 @@
+Monster:
+  num: 479
+  name: Arlan
+  type: Dark
+  cost: 3
+  hp: 7
+  ap: 1
+  tp: 5
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ATSwapPerm
+    - Paralysis

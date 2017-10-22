@@ -1,0 +1,19 @@
+Item:
+  num: 675
+  name: Chao+
+  type: Mag
+  cost: 2
+  hp: 5
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - EquipperEXPBoost
+    - Mag

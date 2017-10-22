@@ -1,0 +1,25 @@
+Item:
+  num: 704
+  name: Dremaga
+  type: Cane
+  cost: 1
+  hp: 2
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - APAssist
+    - BigSwing

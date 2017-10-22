@@ -1,0 +1,21 @@
+Item:
+  num: 391
+  name: Power Maser
+  type: Gun
+  cost: 5
+  hp: 11
+  ap: 6
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +--
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - FixedDamage

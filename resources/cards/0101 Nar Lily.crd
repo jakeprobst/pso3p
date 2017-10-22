@@ -1,0 +1,21 @@
+Monster:
+  num: 101
+  name: Nar Lily
+  type: ABeast
+  cost: 2
+  hp: 2
+  ap: 0
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Yellow
+  ability:
+    - EarthBind
+    - TimeBomb

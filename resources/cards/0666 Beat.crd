@@ -1,0 +1,21 @@
+Action:
+  num: 666
+  name: Beat
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 5
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - EXPLoss

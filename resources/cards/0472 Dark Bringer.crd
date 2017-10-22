@@ -1,0 +1,25 @@
+Monster:
+  num: 472
+  name: Dark Bringer
+  type: Dark
+  cost: 6
+  hp: 18
+  ap: 7
+  tp: 2
+  mv: 4
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - APGrowth
+    - Haste

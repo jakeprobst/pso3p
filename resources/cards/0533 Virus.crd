@@ -1,0 +1,21 @@
+Action:
+  num: 533
+  name: Virus
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 4
+  tp: 0
+  mv: 0
+  target: Everyone
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - LowcostDamager

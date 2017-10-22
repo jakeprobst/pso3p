@@ -1,0 +1,8 @@
+Assist:
+  num: 293
+  name: Trash 1
+  cost: 1
+  time: 1
+  target: Team
+  ability:
+    - Trash1

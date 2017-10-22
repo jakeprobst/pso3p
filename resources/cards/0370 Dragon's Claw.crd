@@ -1,0 +1,24 @@
+Item:
+  num: 370
+  name: Dragon's Claw
+  type: Sword
+  cost: 4
+  hp: 1
+  ap: 4
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - NativeSlayer

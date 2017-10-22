@@ -1,0 +1,25 @@
+Monster:
+  num: 478
+  name: Baranz
+  type: Machine
+  cost: 6
+  hp: 11
+  ap: 0
+  tp: 0
+  mv: 3
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - GuardCreature
+    - GuardsDemolisher
+    - Focus

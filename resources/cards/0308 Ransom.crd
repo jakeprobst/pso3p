@@ -1,0 +1,8 @@
+Assist:
+  num: 308
+  name: Ransom
+  cost: 3
+  time: 4
+  target: Self
+  ability:
+    - EXPDecoy

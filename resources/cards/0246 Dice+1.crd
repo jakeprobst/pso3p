@@ -1,0 +1,8 @@
+Assist:
+  num: 246
+  name: Dice+1
+  cost: 3
+  time: 255
+  target: Everyone
+  ability:
+    - Dice1

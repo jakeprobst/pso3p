@@ -1,0 +1,25 @@
+Character:
+  num: 278
+  name: Endu
+  type: Arkz
+  class: HUmar
+  hp: 0
+  ap: 3
+  tp: 1
+  mv: 3
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - Rampage

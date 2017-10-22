@@ -1,0 +1,26 @@
+Item:
+  num: 415
+  name: Striker of Chao
+  type: Cane
+  cost: 5
+  hp: 7
+  ap: 2
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPPower
+    - Filial
+    - Inherit

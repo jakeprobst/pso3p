@@ -1,0 +1,8 @@
+Assist:
+  num: 317
+  name: Tech Field
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - TPBoost

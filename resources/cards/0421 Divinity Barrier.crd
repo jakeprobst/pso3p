@@ -1,0 +1,19 @@
+Item:
+  num: 421
+  name: Divinity Barrier
+  type: Shield
+  cost: 3
+  hp: 7
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - MajorHalfguard

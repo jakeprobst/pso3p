@@ -1,0 +1,26 @@
+Monster:
+  num: 47
+  name: Pofuilly Slime +
+  type: ABeast
+  cost: 3
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - AttackBlock
+    - HeavySteps
+    - BigSwing

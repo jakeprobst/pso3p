@@ -1,0 +1,20 @@
+Monster:
+  num: 50
+  name: Sinow Beat +
+  type: Machine
+  cost: 3
+  hp: 7
+  ap: 0
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - Group

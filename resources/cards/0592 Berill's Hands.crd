@@ -1,0 +1,20 @@
+Item:
+  num: 592
+  name: Berill's Hands
+  type: Sword
+  cost: 3
+  hp: 4
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - DEFCost1Disable

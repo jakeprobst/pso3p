@@ -1,0 +1,25 @@
+Item:
+  num: 348
+  name: Samba Maracas
+  type: Sword
+  cost: 1
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - AllyBonus
+    - Feeble

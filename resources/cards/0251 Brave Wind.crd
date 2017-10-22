@@ -1,0 +1,8 @@
+Assist:
+  num: 251
+  name: Brave Wind
+  cost: 3
+  time: 4
+  target: Self
+  ability:
+    - APBoost

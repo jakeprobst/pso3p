@@ -1,0 +1,22 @@
+Monster:
+  num: 499
+  name: Sinow Zoa
+  type: Machine
+  cost: 5
+  hp: 12
+  ap: 2
+  tp: 0
+  mv: 9
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Rampage
+    - Warp
+    - DoubleStrike

@@ -1,0 +1,8 @@
+Assist:
+  num: 302
+  name: Muscular
+  cost: 3
+  time: 1
+  target: Everyone
+  ability:
+    - FCAPBoost

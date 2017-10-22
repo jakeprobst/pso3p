@@ -1,0 +1,26 @@
+Character:
+  num: 722
+  name: DRAcasearl
+  type: Arkz
+  class: RAcaseal
+  hp: 2
+  ap: 2
+  tp: 0
+  mv: 4
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - FixedRange
+    - AntiAbnormality
+    - AerialAssassin

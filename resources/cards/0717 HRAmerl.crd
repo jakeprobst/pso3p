@@ -1,0 +1,25 @@
+Character:
+  num: 717
+  name: HRAmerl
+  type: Hunter
+  class: RAmar
+  hp: -1
+  ap: 2
+  tp: 1
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - FixedRange
+    - EXPBonus

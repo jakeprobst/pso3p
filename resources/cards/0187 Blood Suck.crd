@@ -1,0 +1,21 @@
+Action:
+  num: 187
+  name: Blood Suck
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Green
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - BloodSuck

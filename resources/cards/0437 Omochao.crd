@@ -1,0 +1,19 @@
+Item:
+  num: 437
+  name: Omochao
+  type: Mag
+  cost: 7
+  hp: 15
+  ap: 7
+  tp: 5
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Inherit
+    - Mag

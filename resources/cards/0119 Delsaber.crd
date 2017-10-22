@@ -1,0 +1,26 @@
+Monster:
+  num: 119
+  name: Delsaber
+  type: Dark
+  cost: 4
+  hp: 6
+  ap: 0
+  tp: 1
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Drain
+    - DarkAPCount
+    - Haste

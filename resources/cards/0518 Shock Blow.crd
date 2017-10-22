@@ -1,0 +1,22 @@
+Action:
+  num: 518
+  name: Shock Blow
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Red
+    - Purple
+  rightlink: []
+  ability:
+    - FrozenDeath

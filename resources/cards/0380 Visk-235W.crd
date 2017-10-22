@@ -1,0 +1,26 @@
+Item:
+  num: 380
+  name: Visk-235W
+  type: Gun
+  cost: 2
+  hp: 4
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Paralysis

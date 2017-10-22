@@ -1,0 +1,21 @@
+Action:
+  num: 537
+  name: Invalid
+  type: Defense
+  cost: 2
+  hp: 255
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability:
+    - HighcostGuard

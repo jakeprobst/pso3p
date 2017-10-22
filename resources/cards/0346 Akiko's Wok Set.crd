@@ -1,0 +1,19 @@
+Item:
+  num: 346
+  name: Akiko's Wok Set
+  type: Sword
+  cost: 3
+  hp: 6
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike

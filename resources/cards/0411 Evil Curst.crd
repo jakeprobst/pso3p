@@ -1,0 +1,22 @@
+Item:
+  num: 411
+  name: Evil Curst
+  type: Cane
+  cost: 5
+  hp: 11
+  ap: 0
+  tp: 5
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Yellow
+  ability:
+    - MajorDeath
+    - SteadyDamage

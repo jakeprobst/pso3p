@@ -1,0 +1,8 @@
+Assist:
+  num: 266
+  name: Shuffle All
+  cost: 2
+  time: 1
+  target: Everyone
+  ability:
+    - Shuffle

@@ -1,0 +1,8 @@
+Assist:
+  num: 322
+  name: Saber Dance
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - SwordAPBoost

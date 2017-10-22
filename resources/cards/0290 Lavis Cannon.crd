@@ -1,0 +1,26 @@
+Item:
+  num: 290
+  name: Lavis Cannon
+  type: Sword
+  cost: 7
+  hp: 19
+  ap: 5
+  tp: 5
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BattleRecovery
+    - APGrowth
+    - SCSlayer

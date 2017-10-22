@@ -1,0 +1,23 @@
+Item:
+  num: 641
+  name: Panzer Faust
+  type: Gun
+  cost: 5
+  hp: 14
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Rampage
+    - BigSwing

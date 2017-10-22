@@ -1,0 +1,19 @@
+Item:
+  num: 452
+  name: Sega Saturn
+  type: Mag
+  cost: 4
+  hp: 7
+  ap: 3
+  tp: 1
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Inherit
+    - Mag

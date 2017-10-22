@@ -1,0 +1,8 @@
+Assist:
+  num: 576
+  name: Bomb
+  cost: 4
+  time: 1
+  target: Everyone
+  ability:
+    - Bomb

@@ -1,0 +1,27 @@
+Monster:
+  num: 714
+  name: Richie
+  type: Native
+  cost: 3
+  hp: 6
+  ap: 0
+  tp: 4
+  mv: 2
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Green
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Freeze

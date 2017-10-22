@@ -1,0 +1,20 @@
+Item:
+  num: 590
+  name: Red Dagger
+  type: Sword
+  cost: 4
+  hp: 7
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - Filial

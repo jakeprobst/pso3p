@@ -1,0 +1,24 @@
+Item:
+  num: 15
+  name: DB's Saber
+  type: Sword
+  cost: 2
+  hp: 4
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - LinkAPBoost

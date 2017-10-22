@@ -1,0 +1,20 @@
+Item:
+  num: 426
+  name: Custom Barrier V.OO
+  type: Shield
+  cost: 5
+  hp: 13
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - LinkEXPDecoy
+    - LowcostHalfguard

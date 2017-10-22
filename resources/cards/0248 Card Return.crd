@@ -1,0 +1,8 @@
+Assist:
+  num: 248
+  name: Card Return
+  cost: 1
+  time: 1
+  target: Self
+  ability:
+    - FetchDiscarded

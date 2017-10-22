@@ -1,0 +1,21 @@
+Item:
+  num: 359
+  name: S-Beat's Blade
+  type: Sword
+  cost: 4
+  hp: 8
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - MachineSlayer
+    - MachineHalfguard

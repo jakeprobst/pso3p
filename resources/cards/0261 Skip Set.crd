@@ -1,0 +1,8 @@
+Assist:
+  num: 261
+  name: Skip Set
+  cost: 2
+  time: 2
+  target: Everyone
+  ability:
+    - SkipSet

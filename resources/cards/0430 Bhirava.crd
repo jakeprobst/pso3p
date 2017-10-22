@@ -1,0 +1,19 @@
+Item:
+  num: 430
+  name: Bhirava
+  type: Mag
+  cost: 2
+  hp: 3
+  ap: 0
+  tp: 1
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - NativeHalfguard
+    - Mag

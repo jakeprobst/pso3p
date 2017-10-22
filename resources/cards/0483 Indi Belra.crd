@@ -1,0 +1,22 @@
+Monster:
+  num: 483
+  name: Indi Belra
+  type: Dark
+  cost: 6
+  hp: 20
+  ap: 10
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - HeavySteps
+    - Snatch
+    - AerialAssassin

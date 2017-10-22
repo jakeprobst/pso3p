@@ -1,0 +1,26 @@
+Monster:
+  num: 124
+  name: Dark Gunner
+  type: Dark
+  cost: 1
+  hp: 2
+  ap: 2
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - ATKDiceBoost
+    - SteadyDamage

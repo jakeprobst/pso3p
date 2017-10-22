@@ -1,0 +1,8 @@
+Assist:
+  num: 245
+  name: Dice Half
+  cost: 5
+  time: 4
+  target: Everyone
+  ability:
+    - Dice12

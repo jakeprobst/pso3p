@@ -1,0 +1,19 @@
+Item:
+  num: 44
+  name: Dagger
+  type: Sword
+  cost: 2
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike

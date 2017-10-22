@@ -1,0 +1,21 @@
+Item:
+  num: 365
+  name: Double Cannon
+  type: Sword
+  cost: 6
+  hp: 15
+  ap: 4
+  tp: 6
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Ripple
+    - Pierce

@@ -1,0 +1,21 @@
+Action:
+  num: 678
+  name: Restrict Wave
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  leftlink:
+    - Leukon
+  toplink:
+    - Green
+  rightlink: []
+  ability:
+    - EarthBind

@@ -1,0 +1,8 @@
+Assist:
+  num: 332
+  name: Vengeance
+  cost: 4
+  time: 4
+  target: Team
+  ability:
+    - Vengeance

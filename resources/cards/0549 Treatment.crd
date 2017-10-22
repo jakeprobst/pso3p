@@ -1,0 +1,22 @@
+Action:
+  num: 549
+  name: Treatment
+  type: Defense
+  cost: 2
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+    - Green
+  rightlink: []
+  ability:
+    - AntiAbnormality

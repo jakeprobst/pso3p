@@ -1,0 +1,20 @@
+Item:
+  num: 591
+  name: S-Red's Blade
+  type: Sword
+  cost: 5
+  hp: 9
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - MajorHalfguard

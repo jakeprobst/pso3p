@@ -1,0 +1,8 @@
+Assist:
+  num: 324
+  name: Cane Palace
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - CaneTPBoost

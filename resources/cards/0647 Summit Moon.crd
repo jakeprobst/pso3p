@@ -1,0 +1,24 @@
+Item:
+  num: 647
+  name: Summit Moon
+  type: Cane
+  cost: 4
+  hp: 8
+  ap: 1
+  tp: 3
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPAssist

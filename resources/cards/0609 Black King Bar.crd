@@ -1,0 +1,25 @@
+Item:
+  num: 609
+  name: Black King Bar
+  type: Sword
+  cost: 5
+  hp: 13
+  ap: 4
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - GuardsDemolisher
+    - MachineInfluence

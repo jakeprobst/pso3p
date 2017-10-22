@@ -1,0 +1,8 @@
+Assist:
+  num: 298
+  name: Assist Vanish
+  cost: 1
+  time: 1
+  target: Everyone
+  ability:
+    - ASVanish

@@ -1,0 +1,8 @@
+Assist:
+  num: 575
+  name: Quick Time
+  cost: 2
+  time: 1
+  target: Everyone
+  ability:
+    - EffectReducer

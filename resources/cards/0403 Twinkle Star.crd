@@ -1,0 +1,24 @@
+Item:
+  num: 403
+  name: Twinkle Star
+  type: Cane
+  cost: 4
+  hp: 9
+  ap: 1
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ATSwapPerm

@@ -1,0 +1,27 @@
+Monster:
+  num: 488
+  name: Zol Gibbon
+  type: Native
+  cost: 5
+  hp: 14
+  ap: 0
+  tp: 6
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - NativeAPCount
+    - MinorDeath
+    - Freeze

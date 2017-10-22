@@ -1,0 +1,8 @@
+Assist:
+  num: 252
+  name: Silent Colosseum
+  cost: 4
+  time: 255
+  target: Everyone
+  ability:
+    - ImpactBlock

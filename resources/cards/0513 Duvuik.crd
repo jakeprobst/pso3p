@@ -1,0 +1,20 @@
+Monster:
+  num: 513
+  name: Duvuik
+  type: Machine
+  cost: 2
+  hp: 5
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - Reborn
+    - TimedTPSacrifice

@@ -1,0 +1,8 @@
+Assist:
+  num: 331
+  name: Reverse Card
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - HandFlip

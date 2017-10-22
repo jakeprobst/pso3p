@@ -1,0 +1,18 @@
+Item:
+  num: 23
+  name: Shield
+  type: Shield
+  cost: 2
+  hp: 6
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector

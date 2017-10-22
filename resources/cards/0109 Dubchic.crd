@@ -1,0 +1,24 @@
+Monster:
+  num: 109
+  name: Dubchic
+  type: Machine
+  cost: 2
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 1
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - FullHeal
+    - MachineAPCount

@@ -1,0 +1,26 @@
+Item:
+  num: 660
+  name: Storm Wand:Indra
+  type: Cane
+  cost: 3
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - RandomTP
+    - CaneHalfguard
+    - MachineHalfguard

@@ -1,0 +1,21 @@
+Action:
+  num: 179
+  name: Double-Edged Dice
+  type: Attack
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Green
+  toplink:
+    - Purple
+  rightlink: []
+  ability:
+    - RussianRoulette

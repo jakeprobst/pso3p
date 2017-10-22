@@ -1,0 +1,26 @@
+Boss:
+  num: 667
+  name: Leukon Knight
+  hp: 25
+  ap: 2
+  tp: 7
+  mv: 9
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Leukon
+    - Orange
+  ability:
+    - AntiAbnormality
+    - ATSwapTurn
+    - PeriodicField
+    - Aerial
+    - AHSwapTurn

@@ -1,0 +1,19 @@
+Monster:
+  num: 117
+  name: La Dimenian
+  type: Dark
+  cost: 2
+  hp: 4
+  ap: 0
+  tp: 0
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - HPHalver
+    - LimitedAction

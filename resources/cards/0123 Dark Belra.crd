@@ -1,0 +1,23 @@
+Monster:
+  num: 123
+  name: Dark Belra
+  type: Dark
+  cost: 5
+  hp: 17
+  ap: 10
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - HeavySteps
+    - GuardsDemolisher
+    - BigSwing

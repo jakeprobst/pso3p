@@ -1,0 +1,8 @@
+Assist:
+  num: 305
+  name: Gold Rush
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - GoldRush

@@ -1,0 +1,26 @@
+Monster:
+  num: 121
+  name: Bulk
+  type: Dark
+  cost: 1
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Suicide
+    - Unfilial

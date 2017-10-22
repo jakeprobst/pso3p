@@ -1,0 +1,21 @@
+Item:
+  num: 14
+  name: Photon Claw
+  type: Sword
+  cost: 2
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - HandDisrupter
+    - HeavyPierce

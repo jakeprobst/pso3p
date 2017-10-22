@@ -1,0 +1,8 @@
+Assist:
+  num: 321
+  name: Ruin Darkness
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - DarkAPBoost

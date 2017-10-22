@@ -1,0 +1,29 @@
+Monster:
+  num: 507
+  name: Merikle
+  type: ABeast
+  cost: 7
+  hp: 21
+  ap: 3
+  tp: 5
+  mv: 2
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - GuardCreature
+    - ParalyzedDeath
+    - Unfilial

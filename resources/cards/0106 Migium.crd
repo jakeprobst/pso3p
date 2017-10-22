@@ -1,0 +1,24 @@
+Monster:
+  num: 106
+  name: Migium
+  type: ABeast
+  cost: 1
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Combo

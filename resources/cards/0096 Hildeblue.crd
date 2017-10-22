@@ -1,0 +1,25 @@
+Monster:
+  num: 96
+  name: Hildeblue
+  type: Native
+  cost: 5
+  hp: 12
+  ap: 5
+  tp: 4
+  mv: 3
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BonusAPRise
+    - Freeze

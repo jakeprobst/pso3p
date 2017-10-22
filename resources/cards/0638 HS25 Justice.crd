@@ -1,0 +1,25 @@
+Item:
+  num: 638
+  name: HS25 Justice
+  type: Gun
+  cost: 3
+  hp: 7
+  ap: 1
+  tp: 1
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Freeze

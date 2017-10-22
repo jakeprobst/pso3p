@@ -1,0 +1,24 @@
+Item:
+  num: 340
+  name: Harisen Battle Fan
+  type: Sword
+  cost: 2
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - ReturnHome

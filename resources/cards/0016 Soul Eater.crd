@@ -1,0 +1,26 @@
+Item:
+  num: 16
+  name: Soul Eater
+  type: Sword
+  cost: 4
+  hp: 7
+  ap: 5
+  tp: 2
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - SteadyDamage
+    - InstantDeath

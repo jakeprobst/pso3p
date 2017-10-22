@@ -1,0 +1,25 @@
+Item:
+  num: 584
+  name: Red Sword
+  type: Sword
+  cost: 4
+  hp: 6
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - SwordHalfguard
+    - GunHalfguard
+    - CaneHalfguard

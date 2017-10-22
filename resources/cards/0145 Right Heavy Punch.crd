@@ -1,0 +1,23 @@
+Action:
+  num: 145
+  name: Right Heavy Punch
+  type: Attack
+  cost: 5
+  hp: 0
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -++
+    - -++
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Rampage

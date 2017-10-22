@@ -1,0 +1,25 @@
+Monster:
+  num: 458
+  name: Pal Rappy
+  type: Native
+  cost: 3
+  hp: 3
+  ap: 1
+  tp: 2
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Dash
+    - TimedTPSacrifice

@@ -1,0 +1,25 @@
+Item:
+  num: 656
+  name: Alive Aqhu
+  type: Cane
+  cost: 3
+  hp: 5
+  ap: 1
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BattleRecovery
+    - TPPower

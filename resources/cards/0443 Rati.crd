@@ -1,0 +1,19 @@
+Item:
+  num: 443
+  name: Rati
+  type: Mag
+  cost: 4
+  hp: 5
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - AerialStatus
+    - Mag

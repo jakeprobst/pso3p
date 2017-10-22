@@ -1,0 +1,8 @@
+Assist:
+  num: 578
+  name: Battle Royale
+  cost: 4
+  time: 2
+  target: Everyone
+  ability:
+    - BattleRoyale

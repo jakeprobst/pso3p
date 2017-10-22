@@ -1,0 +1,8 @@
+Assist:
+  num: 311
+  name: Skip Draw
+  cost: 3
+  time: 2
+  target: Everyone
+  ability:
+    - SkipDraw

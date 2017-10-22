@@ -1,0 +1,26 @@
+Monster:
+  num: 463
+  name: Hildelt
+  type: Native
+  cost: 5
+  hp: 13
+  ap: 4
+  tp: 3
+  mv: 3
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Rampage
+    - WeakSpot

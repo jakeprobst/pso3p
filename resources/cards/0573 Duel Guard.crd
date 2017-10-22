@@ -1,0 +1,24 @@
+Action:
+  num: 573
+  name: Duel Guard
+  type: Defense
+  cost: 2
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+    - Green
+    - Orange
+    - Purple
+  rightlink: []
+  ability:
+    - SameAPBlock

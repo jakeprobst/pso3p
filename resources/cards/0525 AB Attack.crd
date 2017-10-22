@@ -1,0 +1,24 @@
+Action:
+  num: 525
+  name: AB Attack
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+  ability:
+    - ABeastSlayer
+    - ABeastAttack

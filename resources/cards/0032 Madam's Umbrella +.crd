@@ -1,0 +1,24 @@
+Item:
+  num: 32
+  name: Madam's Umbrella +
+  type: Sword
+  cost: 4
+  hp: 5
+  ap: 1
+  tp: 2
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Stall

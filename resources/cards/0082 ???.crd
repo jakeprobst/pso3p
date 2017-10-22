@@ -1,0 +1,23 @@
+Character:
+  num: 82
+  name: ???
+  type: Arkz
+  class: FOnewm
+  hp: 2
+  ap: 1
+  tp: 3
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability: []

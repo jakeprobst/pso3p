@@ -1,0 +1,8 @@
+Assist:
+  num: 300
+  name: Inheritance
+  cost: 3
+  time: 4
+  target: Team
+  ability:
+    - Inherit

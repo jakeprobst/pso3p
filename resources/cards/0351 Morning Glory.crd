@@ -1,0 +1,25 @@
+Item:
+  num: 351
+  name: Morning Glory
+  type: Sword
+  cost: 5
+  hp: 10
+  ap: 0
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - EnemyBonus
+    - SCSlayer

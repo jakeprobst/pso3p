@@ -1,0 +1,25 @@
+Monster:
+  num: 27
+  name: Assassin+
+  type: ABeast
+  cost: 5
+  hp: 15
+  ap: 4
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - ABeastAPCount
+    - LowcostSlayer
+    - Stall

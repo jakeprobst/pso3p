@@ -1,0 +1,8 @@
+Assist:
+  num: 263
+  name: Fly
+  cost: 3
+  time: 4
+  target: Team
+  ability:
+    - AerialTeam

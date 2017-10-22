@@ -1,0 +1,26 @@
+Item:
+  num: 611
+  name: Gobooma's Claw
+  type: Sword
+  cost: 3
+  hp: 6
+  ap: 2
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ABeastInfluence
+    - Paralysis

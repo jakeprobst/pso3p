@@ -1,0 +1,8 @@
+Assist:
+  num: 320
+  name: Mine Brightness
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - MachineAPBoost

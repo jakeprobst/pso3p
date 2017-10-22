@@ -1,0 +1,30 @@
+Monster:
+  num: 43
+  name: Mericarol +
+  type: ABeast
+  cost: 5
+  hp: 16
+  ap: 1
+  tp: 2
+  mv: 5
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Acid
+    - Paralysis
+    - InstantDeath

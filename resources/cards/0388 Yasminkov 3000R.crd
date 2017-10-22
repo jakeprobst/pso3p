@@ -1,0 +1,25 @@
+Item:
+  num: 388
+  name: Yasminkov 3000R
+  type: Gun
+  cost: 5
+  hp: 12
+  ap: 5
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - AerialAssassin

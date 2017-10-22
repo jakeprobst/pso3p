@@ -1,0 +1,24 @@
+Monster:
+  num: 476
+  name: Canabin
+  type: Machine
+  cost: 2
+  hp: 4
+  ap: 1
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - DeathCompanion
+    - Aerial

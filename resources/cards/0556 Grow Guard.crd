@@ -1,0 +1,24 @@
+Action:
+  num: 556
+  name: Grow Guard
+  type: Defense
+  cost: 1
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+    - Green
+    - Orange
+    - Purple
+  rightlink: []
+  ability:
+    - SurvivorAPBoost

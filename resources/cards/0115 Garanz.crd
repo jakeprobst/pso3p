@@ -1,0 +1,22 @@
+Monster:
+  num: 115
+  name: Garanz
+  type: Machine
+  cost: 4
+  hp: 8
+  ap: 0
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - Focus
+    - Ripple
+    - Pierce

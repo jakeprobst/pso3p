@@ -1,0 +1,21 @@
+Action:
+  num: 699
+  name: Meteor
+  type: Attack
+  cost: 5
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink:
+    - Green
+  rightlink: []
+  ability:
+    - MeteorShower

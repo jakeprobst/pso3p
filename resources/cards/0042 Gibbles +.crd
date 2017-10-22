@@ -1,0 +1,25 @@
+Monster:
+  num: 42
+  name: Gibbles +
+  type: Native
+  cost: 6
+  hp: 15
+  ap: 5
+  tp: 2
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - CarnageInclined
+    - Curse

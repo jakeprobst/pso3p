@@ -1,0 +1,24 @@
+Character:
+  num: 727
+  name: HHUcast
+  type: Hunter
+  class: HUcast
+  hp: -3
+  ap: 1
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - EnemyBonus
+    - AntiAbnormality

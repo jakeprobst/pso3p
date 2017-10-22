@@ -1,0 +1,8 @@
+Assist:
+  num: 314
+  name: Flatland
+  cost: 4
+  time: 255
+  target: Self
+  ability:
+    - FreeSummoning

@@ -1,0 +1,19 @@
+Item:
+  num: 435
+  name: Preta
+  type: Mag
+  cost: 3
+  hp: 6
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - TechHalfguard
+    - Mag

@@ -1,0 +1,8 @@
+Assist:
+  num: 24
+  name: Dice Fever +
+  cost: 4
+  time: 255
+  target: Everyone
+  ability:
+    - Dice6

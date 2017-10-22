@@ -1,0 +1,8 @@
+Assist:
+  num: 309
+  name: Simple
+  cost: 3
+  time: 4
+  target: Everyone
+  ability:
+    - FixedRange

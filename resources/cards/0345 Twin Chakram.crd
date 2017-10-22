@@ -1,0 +1,20 @@
+Item:
+  num: 345
+  name: Twin Chakram
+  type: Sword
+  cost: 4
+  hp: 7
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - ActionDisrupter

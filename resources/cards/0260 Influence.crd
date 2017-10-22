@@ -1,0 +1,8 @@
+Assist:
+  num: 260
+  name: Influence
+  cost: 5
+  time: 4
+  target: Everyone
+  ability:
+    - FCBonus

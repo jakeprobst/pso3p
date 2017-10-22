@@ -1,0 +1,25 @@
+Character:
+  num: 689
+  name: ???
+  type: Hunter
+  class: RAcaseal
+  hp: 1
+  ap: 3
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - AntiAbnormality
+    - HPAssist
+    - FixedRange

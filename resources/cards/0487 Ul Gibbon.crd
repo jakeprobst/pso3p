@@ -1,0 +1,24 @@
+Monster:
+  num: 487
+  name: Ul Gibbon
+  type: Native
+  cost: 4
+  hp: 10
+  ap: 2
+  tp: 5
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - AllyBonus

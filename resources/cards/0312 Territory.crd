@@ -1,0 +1,8 @@
+Assist:
+  num: 312
+  name: Territory
+  cost: 2
+  time: 255
+  target: Everyone
+  ability:
+    - SameCardBanned

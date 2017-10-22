@@ -1,0 +1,26 @@
+Item:
+  num: 623
+  name: Ruby Bullet
+  type: Gun
+  cost: 5
+  hp: 12
+  ap: 0
+  tp: 5
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - GunAPCount
+    - Immobile

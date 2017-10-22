@@ -1,0 +1,26 @@
+Monster:
+  num: 470
+  name: Crimson Assassin
+  type: ABeast
+  cost: 6
+  hp: 16
+  ap: 3
+  tp: 5
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Pierce
+    - CaneHalfguard
+    - Freeze

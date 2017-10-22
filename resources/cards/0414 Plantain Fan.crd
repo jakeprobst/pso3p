@@ -1,0 +1,26 @@
+Item:
+  num: 414
+  name: Plantain Fan
+  type: Cane
+  cost: 4
+  hp: 5
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BonusTPRise
+    - EXPDecoy
+    - WeakSpot

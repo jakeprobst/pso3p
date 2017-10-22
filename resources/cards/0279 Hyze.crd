@@ -1,0 +1,25 @@
+Character:
+  num: 279
+  name: Hyze
+  type: Arkz
+  class: HUcast
+  hp: 4
+  ap: 4
+  tp: 0
+  mv: 3
+  target: Multiple
+  range:
+    - -+-
+    - +--
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - AntiAbnormality
+    - APAssist

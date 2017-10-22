@@ -1,0 +1,20 @@
+Action:
+  num: 569
+  name: Reversal
+  type: Defense
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DamageAbsorb

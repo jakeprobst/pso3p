@@ -1,0 +1,8 @@
+Assist:
+  num: 25
+  name: Rich +
+  cost: 2
+  time: 255
+  target: Everyone
+  ability:
+    - DrawLess

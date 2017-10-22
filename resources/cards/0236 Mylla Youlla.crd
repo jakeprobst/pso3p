@@ -1,0 +1,20 @@
+Action:
+  num: 236
+  name: Mylla Youlla
+  type: PhotonBlast
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Ally
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink: []
+  rightlink: []
+  ability:
+    - MyllaYoulla

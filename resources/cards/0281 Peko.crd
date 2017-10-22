@@ -1,0 +1,24 @@
+Character:
+  num: 281
+  name: Peko
+  type: Arkz
+  class: FOnewm
+  hp: 3
+  ap: 2
+  tp: 2
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - Tech

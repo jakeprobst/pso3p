@@ -1,0 +1,27 @@
+Item:
+  num: 645
+  name: Photon Launcher
+  type: Gun
+  cost: 3
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - GunAPCount
+    - HeavyRampage
+    - BigSwing

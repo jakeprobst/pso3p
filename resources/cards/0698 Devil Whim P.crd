@@ -1,0 +1,25 @@
+Action:
+  num: 698
+  name: Devil Whim P
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Pollux
+  toplink:
+    - Red
+    - Purple
+  rightlink: []
+  ability:
+    - DevilsWhim

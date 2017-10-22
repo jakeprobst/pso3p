@@ -1,0 +1,8 @@
+Assist:
+  num: 334
+  name: Homesick
+  cost: 2
+  time: 4
+  target: Team
+  ability:
+    - Return

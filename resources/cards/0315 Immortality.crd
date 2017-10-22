@@ -1,0 +1,8 @@
+Assist:
+  num: 315
+  name: Immortality
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - Immortal

@@ -1,0 +1,8 @@
+Assist:
+  num: 577
+  name: Skip Turn
+  cost: 3
+  time: 1
+  target: Self
+  ability:
+    - SkipTurn

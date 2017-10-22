@@ -1,0 +1,18 @@
+Item:
+  num: 419
+  name: Barrier
+  type: Shield
+  cost: 1
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector

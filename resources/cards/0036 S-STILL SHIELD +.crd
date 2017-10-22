@@ -1,0 +1,19 @@
+Item:
+  num: 36
+  name: S-STILL SHIELD +
+  type: Shield
+  cost: 4
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - EquipperHaste

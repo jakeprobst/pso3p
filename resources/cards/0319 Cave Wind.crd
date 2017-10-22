@@ -1,0 +1,8 @@
+Assist:
+  num: 319
+  name: Cave Wind
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - ABeastAPBoost

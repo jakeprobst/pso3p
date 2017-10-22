@@ -1,0 +1,8 @@
+Assist:
+  num: 296
+  name: Assist Trash
+  cost: 1
+  time: 1
+  target: Self
+  ability:
+    - ASTrash

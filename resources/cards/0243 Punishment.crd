@@ -1,0 +1,21 @@
+Action:
+  num: 243
+  name: Punishment
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 7
+  tp: 0
+  mv: 0
+  target: Everyone
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - HighcostDamager

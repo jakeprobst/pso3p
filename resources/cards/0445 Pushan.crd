@@ -1,0 +1,19 @@
+Item:
+  num: 445
+  name: Pushan
+  type: Mag
+  cost: 4
+  hp: 6
+  ap: 0
+  tp: 2
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - TimedAPSacrifice
+    - Mag

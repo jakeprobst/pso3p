@@ -1,0 +1,24 @@
+Item:
+  num: 646
+  name: Windmill
+  type: Cane
+  cost: 4
+  hp: 9
+  ap: 0
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - EnemyAHSwapPerm

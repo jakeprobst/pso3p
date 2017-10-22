@@ -1,0 +1,8 @@
+Assist:
+  num: 264
+  name: Necromancer
+  cost: 1
+  time: 1
+  target: Self
+  ability:
+    - Offering

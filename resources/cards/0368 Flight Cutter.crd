@@ -1,0 +1,25 @@
+Item:
+  num: 368
+  name: Flight Cutter
+  type: Sword
+  cost: 4
+  hp: 7
+  ap: 3
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - AerialAssassin
+    - Acid

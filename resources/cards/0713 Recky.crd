@@ -1,0 +1,27 @@
+Monster:
+  num: 713
+  name: Recky
+  type: Native
+  cost: 4
+  hp: 6
+  ap: 3
+  tp: 3
+  mv: 2
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - HeavyRampage

@@ -1,0 +1,24 @@
+Item:
+  num: 624
+  name: Varista
+  type: Gun
+  cost: 2
+  hp: 2
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - HPChange

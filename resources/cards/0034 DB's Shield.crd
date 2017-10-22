@@ -1,0 +1,19 @@
+Item:
+  num: 34
+  name: DB's Shield
+  type: Shield
+  cost: 5
+  hp: 17
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - LinkHeal

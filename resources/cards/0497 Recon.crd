@@ -1,0 +1,19 @@
+Monster:
+  num: 497
+  name: Recon
+  type: Machine
+  cost: 1
+  hp: 1
+  ap: 1
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - Aerial

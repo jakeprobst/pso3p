@@ -1,0 +1,19 @@
+Item:
+  num: 442
+  name: Diva
+  type: Mag
+  cost: 4
+  hp: 2
+  ap: 3
+  tp: 4
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - TimedFrozenDeath
+    - Mag

@@ -1,0 +1,24 @@
+Item:
+  num: 12
+  name: Mechgun
+  type: Gun
+  cost: 2
+  hp: 3
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - MinorSlayer

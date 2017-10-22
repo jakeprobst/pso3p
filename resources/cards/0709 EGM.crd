@@ -1,0 +1,24 @@
+Item:
+  num: 709
+  name: EGM
+  type: Cane
+  cost: 1
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TimedEXPSacrifice

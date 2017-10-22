@@ -1,0 +1,24 @@
+Item:
+  num: 377
+  name: Demolition Comet
+  type: Sword
+  cost: 5
+  hp: 11
+  ap: 4
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - BonusAPRise
+    - MachineSlayer

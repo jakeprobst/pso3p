@@ -1,0 +1,8 @@
+Assist:
+  num: 294
+  name: Empty Hand
+  cost: 2
+  time: 255
+  target: Self
+  ability:
+    - ACTrash

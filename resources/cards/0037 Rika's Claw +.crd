@@ -1,0 +1,23 @@
+Item:
+  num: 37
+  name: Rika's Claw +
+  type: Sword
+  cost: 6
+  hp: 16
+  ap: 2
+  tp: 6
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Actionx2

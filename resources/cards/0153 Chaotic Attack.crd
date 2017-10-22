@@ -1,0 +1,22 @@
+Action:
+  num: 153
+  name: Chaotic Attack
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +--
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink:
+    - Red
+  ability: []

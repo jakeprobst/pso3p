@@ -1,0 +1,27 @@
+Monster:
+  num: 501
+  name: Deldepth
+  type: Dark
+  cost: 4
+  hp: 6
+  ap: 1
+  tp: 6
+  mv: 3
+  target: Multiple
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - AbilityTrap
+    - Freeze
+    - FrozenDeath

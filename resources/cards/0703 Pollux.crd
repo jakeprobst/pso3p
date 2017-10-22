@@ -1,0 +1,22 @@
+Boss:
+  num: 703
+  name: Pollux
+  hp: 15
+  ap: 0
+  tp: 2
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Pollux
+  ability:
+    - AntiAbnormality
+    - UnlimitedSummoning

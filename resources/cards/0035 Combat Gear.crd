@@ -1,0 +1,24 @@
+Item:
+  num: 35
+  name: Combat Gear
+  type: Shield
+  cost: 3
+  hp: 6
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Protector
+    - ShieldWeapon

@@ -1,0 +1,23 @@
+Item:
+  num: 588
+  name: Last Survivor
+  type: Sword
+  cost: 3
+  hp: 4
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - FullHeal

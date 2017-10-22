@@ -1,0 +1,25 @@
+Monster:
+  num: 471
+  name: Dubchich
+  type: Machine
+  cost: 3
+  hp: 5
+  ap: 1
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - FullHeal
+    - GuardCreature
+    - Unfilial

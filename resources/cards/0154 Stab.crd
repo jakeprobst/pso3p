@@ -1,0 +1,22 @@
+Action:
+  num: 154
+  name: Stab
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink:
+    - Red
+  ability: []

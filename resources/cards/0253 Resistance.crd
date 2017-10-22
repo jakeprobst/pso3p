@@ -1,0 +1,8 @@
+Assist:
+  num: 253
+  name: Resistance
+  cost: 5
+  time: 5
+  target: Team
+  ability:
+    - AssistBlock

@@ -1,0 +1,24 @@
+Monster:
+  num: 461
+  name: Gulgus
+  type: Native
+  cost: 3
+  hp: 5
+  ap: 0
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Copy

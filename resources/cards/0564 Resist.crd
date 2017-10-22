@@ -1,0 +1,20 @@
+Action:
+  num: 564
+  name: Resist
+  type: Defense
+  cost: 4
+  hp: 10
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability: []

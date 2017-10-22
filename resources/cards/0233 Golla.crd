@@ -1,0 +1,21 @@
+Action:
+  num: 233
+  name: Golla
+  type: PhotonBlast
+  cost: 4
+  hp: 0
+  ap: 0
+  tp: 7
+  mv: 0
+  target: Single
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  leftlink:
+    - Orange
+  toplink:
+    - Yellow
+  rightlink: []
+  ability: []

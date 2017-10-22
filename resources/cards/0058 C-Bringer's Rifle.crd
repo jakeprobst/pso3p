@@ -1,0 +1,24 @@
+Item:
+  num: 58
+  name: C-Bringer's Rifle
+  type: Gun
+  cost: 6
+  hp: 13
+  ap: 1
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Yellow
+  ability:
+    - BonusAPRise
+    - ActionDisrupter

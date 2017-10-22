@@ -1,0 +1,21 @@
+Action:
+  num: 207
+  name: Companion
+  type: Defense
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability:
+    - EqualDamager

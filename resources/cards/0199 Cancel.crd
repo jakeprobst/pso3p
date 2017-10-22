@@ -1,0 +1,21 @@
+Action:
+  num: 199
+  name: Cancel
+  type: Defense
+  cost: 2
+  hp: 99
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Blue
+    - Green
+  rightlink: []
+  ability:
+    - SpecialAttackBlock

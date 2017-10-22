@@ -1,0 +1,26 @@
+Character:
+  num: 736
+  name: DRAmarl
+  type: Arkz
+  class: RAmarl
+  hp: 3
+  ap: 2
+  tp: 1
+  mv: 3
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - FixedRange
+    - Revenge

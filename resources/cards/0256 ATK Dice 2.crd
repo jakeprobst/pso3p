@@ -1,0 +1,8 @@
+Assist:
+  num: 256
+  name: ATK Dice 2
+  cost: 1
+  time: 1
+  target: Self
+  ability:
+    - ATKDiceBoost

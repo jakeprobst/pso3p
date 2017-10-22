@@ -1,0 +1,22 @@
+Item:
+  num: 642
+  name: Maser Beam
+  type: Gun
+  cost: 3
+  hp: 6
+  ap: 4
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - FixedDamage
+    - ImpactHalfguard

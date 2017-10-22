@@ -1,0 +1,25 @@
+Monster:
+  num: 99
+  name: Guil Shark
+  type: ABeast
+  cost: 3
+  hp: 6
+  ap: 5
+  tp: 2
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Group
+    - WeakSpot

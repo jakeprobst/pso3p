@@ -1,0 +1,26 @@
+Item:
+  num: 610
+  name: Silence Claw
+  type: Sword
+  cost: 3
+  hp: 4
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - MajorDeath
+    - BigSwing
+    - SteadyDamage

@@ -1,0 +1,24 @@
+Monster:
+  num: 500
+  name: Sinow Zele
+  type: Machine
+  cost: 6
+  hp: 15
+  ap: 2
+  tp: 4
+  mv: 9
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Yellow
+  ability:
+    - Actionx2
+    - Warp
+    - Haste

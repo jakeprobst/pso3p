@@ -1,0 +1,21 @@
+Item:
+  num: 394
+  name: NUG2000-Bazooka
+  type: Gun
+  cost: 5
+  hp: 12
+  ap: 2
+  tp: 0
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink: []
+  ability:
+    - CardBack

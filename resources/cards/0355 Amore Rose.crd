@@ -1,0 +1,24 @@
+Item:
+  num: 355
+  name: Amore Rose
+  type: Cane
+  cost: 2
+  hp: 4
+  ap: 0
+  tp: 3
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - NativeHalfguard

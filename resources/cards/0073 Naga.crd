@@ -1,0 +1,26 @@
+Item:
+  num: 73
+  name: Naga
+  type: Mag
+  cost: 2
+  hp: 3
+  ap: 0
+  tp: 1
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Rebirth
+    - TimedParalyzed
+    - Mag

@@ -1,0 +1,21 @@
+Item:
+  num: 593
+  name: Bloody Art
+  type: Sword
+  cost: 3
+  hp: 1
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - SwordAPCount
+    - Artifice

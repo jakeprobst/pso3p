@@ -1,0 +1,19 @@
+Item:
+  num: 439
+  name: Chao
+  type: Mag
+  cost: 6
+  hp: 10
+  ap: 3
+  tp: 6
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Filial
+    - Mag

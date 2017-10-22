@@ -1,0 +1,26 @@
+Item:
+  num: 409
+  name: Dark Bridge
+  type: Cane
+  cost: 7
+  hp: 19
+  ap: 3
+  tp: 6
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - TPPower
+    - MentalFocus
+    - Tech

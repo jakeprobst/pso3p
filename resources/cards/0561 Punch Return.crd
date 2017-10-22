@@ -1,0 +1,21 @@
+Action:
+  num: 561
+  name: Punch Return
+  type: Defense
+  cost: 4
+  hp: 3
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - RampageReflect

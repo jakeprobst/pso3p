@@ -1,0 +1,19 @@
+Item:
+  num: 440
+  name: Chu Chu
+  type: Mag
+  cost: 3
+  hp: 5
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - TimeBomb
+    - Mag

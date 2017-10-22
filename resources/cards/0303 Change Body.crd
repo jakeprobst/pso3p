@@ -1,0 +1,8 @@
+Assist:
+  num: 303
+  name: Change Body
+  cost: 2
+  time: 1
+  target: Everyone
+  ability:
+    - FCATSwapPerm

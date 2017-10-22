@@ -1,0 +1,23 @@
+Monster:
+  num: 89
+  name: Savage Wolf
+  type: Native
+  cost: 2
+  hp: 6
+  ap: 2
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - MinorSlayer

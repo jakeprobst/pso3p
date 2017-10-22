@@ -1,0 +1,20 @@
+Item:
+  num: 21
+  name: P-Blade+
+  type: Gun
+  cost: 5
+  hp: 11
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - BonusAPRise
+    - ActionDisrupter

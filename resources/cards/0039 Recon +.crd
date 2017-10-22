@@ -1,0 +1,23 @@
+Monster:
+  num: 39
+  name: Recon +
+  type: Machine
+  cost: 3
+  hp: 3
+  ap: 2
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - +++
+    - +X+
+    - +++
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - TimeBomb

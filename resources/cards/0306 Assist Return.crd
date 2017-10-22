@@ -1,0 +1,8 @@
+Assist:
+  num: 306
+  name: Assist Return
+  cost: 1
+  time: 1
+  target: Self
+  ability:
+    - ASReturn

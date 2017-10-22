@@ -1,0 +1,8 @@
+Assist:
+  num: 254
+  name: Independent
+  cost: 4
+  time: 5
+  target: Self
+  ability:
+    - AssistBlock

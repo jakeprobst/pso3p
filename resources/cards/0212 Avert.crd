@@ -1,0 +1,21 @@
+Action:
+  num: 212
+  name: Avert
+  type: Defense
+  cost: 1
+  hp: 255
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink: []
+  toplink:
+    - Red
+    - Yellow
+  rightlink: []
+  ability:
+    - LowcostGuard

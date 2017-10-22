@@ -1,0 +1,21 @@
+Action:
+  num: 138
+  name: Attack
+  type: Attack
+  cost: 1
+  hp: 0
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink:
+    - Red
+  ability: []

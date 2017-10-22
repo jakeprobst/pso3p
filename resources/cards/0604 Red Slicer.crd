@@ -1,0 +1,26 @@
+Item:
+  num: 604
+  name: Red Slicer
+  type: Sword
+  cost: 4
+  hp: 8
+  ap: 2
+  tp: 3
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MachineHalfguard
+    - NativeInfluence

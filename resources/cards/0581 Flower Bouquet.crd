@@ -1,0 +1,24 @@
+Item:
+  num: 581
+  name: Flower Bouquet
+  type: Sword
+  cost: 1
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Suicide

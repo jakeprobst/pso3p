@@ -1,0 +1,25 @@
+Item:
+  num: 620
+  name: Red Handgun
+  type: Gun
+  cost: 3
+  hp: 7
+  ap: 2
+  tp: 1
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Acid

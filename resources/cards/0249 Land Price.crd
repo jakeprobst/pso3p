@@ -1,0 +1,8 @@
+Assist:
+  num: 249
+  name: Land Price
+  cost: 4
+  time: 4
+  target: Everyone
+  ability:
+    - ValueRise

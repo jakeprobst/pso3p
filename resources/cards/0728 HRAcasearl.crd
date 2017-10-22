@@ -1,0 +1,24 @@
+Character:
+  num: 728
+  name: HRAcasearl
+  type: Hunter
+  class: RAcaseal
+  hp: -1
+  ap: 1
+  tp: 0
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - FixedRange
+    - AntiAbnormality

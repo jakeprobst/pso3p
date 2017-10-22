@@ -1,0 +1,21 @@
+Monster:
+  num: 474
+  name: Sinow Blue
+  type: Machine
+  cost: 4
+  hp: 8
+  ap: 3
+  tp: 0
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - DoubleStrike
+    - Inherit
+    - SwordHalfguard

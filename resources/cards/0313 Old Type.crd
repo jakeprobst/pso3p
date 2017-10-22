@@ -1,0 +1,8 @@
+Assist:
+  num: 313
+  name: Old Type
+  cost: 3
+  time: 6
+  target: Everyone
+  ability:
+    - FCBanned

@@ -1,0 +1,25 @@
+Item:
+  num: 347
+  name: Flight Fan
+  type: Sword
+  cost: 4
+  hp: 7
+  ap: 2
+  tp: 1
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - +-+
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Snatch

@@ -1,0 +1,19 @@
+Item:
+  num: 429
+  name: Garuda
+  type: Mag
+  cost: 2
+  hp: 2
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - AerialStatus
+    - Mag

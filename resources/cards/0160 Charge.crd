@@ -1,0 +1,23 @@
+Action:
+  num: 160
+  name: Charge
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - ---
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Green
+  rightlink:
+    - Blue
+    - Red
+  ability:
+    - Actionx2

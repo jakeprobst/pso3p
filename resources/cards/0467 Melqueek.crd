@@ -1,0 +1,25 @@
+Monster:
+  num: 467
+  name: Melqueek
+  type: ABeast
+  cost: 4
+  hp: 7
+  ap: 3
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - MajorSlayer
+    - Haste
+    - Acid

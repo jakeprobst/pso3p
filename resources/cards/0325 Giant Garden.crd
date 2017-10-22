@@ -1,0 +1,8 @@
+Assist:
+  num: 325
+  name: Giant Garden
+  cost: 2
+  time: 4
+  target: Everyone
+  ability:
+    - HighcostAPBoost

@@ -1,0 +1,24 @@
+Character:
+  num: 285
+  name: Memoru
+  type: Arkz
+  class: FOnewearl
+  hp: 4
+  ap: 1
+  tp: 4
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - Snatch

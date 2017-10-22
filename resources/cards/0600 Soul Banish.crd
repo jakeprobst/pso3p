@@ -1,0 +1,27 @@
+Item:
+  num: 600
+  name: Soul Banish
+  type: Sword
+  cost: 6
+  hp: 18
+  ap: 7
+  tp: 6
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - SteadyDamage
+    - Exhaust
+    - InstantDeath

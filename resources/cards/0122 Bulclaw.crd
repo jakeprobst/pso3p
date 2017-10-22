@@ -1,0 +1,20 @@
+Monster:
+  num: 122
+  name: Bulclaw
+  type: Dark
+  cost: 3
+  hp: 8
+  ap: 2
+  tp: 4
+  mv: 1
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Orange
+  rightlink: []
+  ability:
+    - MajorPierce

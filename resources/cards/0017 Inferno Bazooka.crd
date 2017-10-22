@@ -1,0 +1,21 @@
+Item:
+  num: 17
+  name: Inferno Bazooka
+  type: Gun
+  cost: 3
+  hp: 8
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - HPHalver
+    - LimitedAction

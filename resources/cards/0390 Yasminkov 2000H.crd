@@ -1,0 +1,19 @@
+Item:
+  num: 390
+  name: Yasminkov 2000H
+  type: Gun
+  cost: 4
+  hp: 5
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - LimitedAction

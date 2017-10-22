@@ -1,0 +1,26 @@
+Item:
+  num: 361
+  name: Ancient Saber
+  type: Sword
+  cost: 5
+  hp: 7
+  ap: 7
+  tp: 4
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - Snatch
+    - Artifice
+    - WeakSpot

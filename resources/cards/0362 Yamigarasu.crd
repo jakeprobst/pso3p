@@ -1,0 +1,26 @@
+Item:
+  num: 362
+  name: Yamigarasu
+  type: Sword
+  cost: 5
+  hp: 13
+  ap: 7
+  tp: 3
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - MinorDeath
+    - SteadyDamage

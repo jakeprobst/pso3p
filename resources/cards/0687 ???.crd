@@ -1,0 +1,23 @@
+Character:
+  num: 687
+  name: ???
+  type: Hunter
+  class: RAmarl
+  hp: -1
+  ap: 2
+  tp: 1
+  mv: 4
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability: []

@@ -1,0 +1,27 @@
+Item:
+  num: 387
+  name: Belra Cannon
+  type: Gun
+  cost: 5
+  hp: 11
+  ap: 7
+  tp: 1
+  mv: 0
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - BigSwing
+    - DarkSlayer

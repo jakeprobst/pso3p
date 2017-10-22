@@ -1,0 +1,21 @@
+Item:
+  num: 357
+  name: Cross Scar
+  type: Sword
+  cost: 3
+  hp: 6
+  ap: 1
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink: []
+  ability:
+    - ABeastHalfguard
+    - DoubleStrike
+    - SteadyDamage

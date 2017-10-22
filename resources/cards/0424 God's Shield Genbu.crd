@@ -1,0 +1,19 @@
+Item:
+  num: 424
+  name: God's Shield Genbu
+  type: Shield
+  cost: 4
+  hp: 10
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Self
+  range:
+    - ---
+    - -X-
+    - ---
+  toplink: []
+  rightlink: []
+  ability:
+    - Protector
+    - ActionDisrupter

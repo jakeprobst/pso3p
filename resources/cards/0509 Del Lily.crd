@@ -1,0 +1,28 @@
+Monster:
+  num: 509
+  name: Del Lily
+  type: Dark
+  cost: 6
+  hp: 12
+  ap: 2
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+    - Purple
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - InstantDeath
+    - AshesofDeath

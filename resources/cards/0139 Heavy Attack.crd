@@ -1,0 +1,20 @@
+Action:
+  num: 139
+  name: Heavy Attack
+  type: Attack
+  cost: 3
+  hp: 0
+  ap: 5
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Red
+  toplink:
+    - Red
+  rightlink: []
+  ability: []

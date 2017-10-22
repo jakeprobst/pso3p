@@ -1,0 +1,27 @@
+Item:
+  num: 630
+  name: Yasminkov 7000V
+  type: Gun
+  cost: 5
+  hp: 7
+  ap: 5
+  tp: 2
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - ABeastSlayer
+    - Rebirth

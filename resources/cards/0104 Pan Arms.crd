@@ -1,0 +1,27 @@
+Monster:
+  num: 104
+  name: Pan Arms
+  type: ABeast
+  cost: 4
+  hp: 6
+  ap: 1
+  tp: 0
+  mv: 1
+  target: Single
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - WeakHitBlock
+    - GuardCreature
+    - Unfilial

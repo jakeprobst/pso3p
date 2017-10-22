@@ -1,0 +1,29 @@
+Monster:
+  num: 492
+  name: Mericarol
+  type: ABeast
+  cost: 7
+  hp: 18
+  ap: 6
+  tp: 0
+  mv: 3
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - Explosion
+    - FullAPAssist
+    - Haste
+    - FullAP

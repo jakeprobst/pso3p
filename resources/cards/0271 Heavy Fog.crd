@@ -1,0 +1,8 @@
+Assist:
+  num: 271
+  name: Heavy Fog
+  cost: 2
+  time: 8
+  target: Everyone
+  ability:
+    - FrontalRange

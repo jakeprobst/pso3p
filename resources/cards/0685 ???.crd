@@ -1,0 +1,25 @@
+Character:
+  num: 685
+  name: ???
+  type: Hunter
+  class: HUcaseal
+  hp: 0
+  ap: 4
+  tp: 0
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Orange
+    - Purple
+  ability:
+    - AntiAbnormality
+    - SCSlayer
+    - LowcostDEFDisable

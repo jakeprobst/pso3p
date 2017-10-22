@@ -1,0 +1,26 @@
+Monster:
+  num: 480
+  name: Merlan
+  type: Dark
+  cost: 4
+  hp: 8
+  ap: 6
+  tp: 2
+  mv: 3
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - HighcostSlayer
+    - SCSlayer
+    - HandDisrupter

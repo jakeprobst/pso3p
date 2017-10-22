@@ -1,0 +1,23 @@
+Action:
+  num: 516
+  name: Lock on 3
+  type: Attack
+  cost: 2
+  hp: 0
+  ap: 0
+  tp: 0
+  mv: 0
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  leftlink:
+    - Blue
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+  ability:
+    - DEFCost3Disable

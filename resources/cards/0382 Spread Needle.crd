@@ -1,0 +1,26 @@
+Item:
+  num: 382
+  name: Spread Needle
+  type: Gun
+  cost: 6
+  hp: 14
+  ap: 5
+  tp: 4
+  mv: 0
+  target: Multiple
+  range:
+    - +++
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Purple
+    - Green
+  ability:
+    - AerialAssassin
+    - HeavyItem

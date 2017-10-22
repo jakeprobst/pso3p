@@ -1,0 +1,26 @@
+Character:
+  num: 682
+  name: ???
+  type: Hunter
+  class: HUmar
+  hp: -2
+  ap: 3
+  tp: 0
+  mv: 2
+  target: Single
+  range:
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Yellow
+    - Orange
+    - Purple
+  ability:
+    - BigSwing
+    - Haste
+    - EXPLoss

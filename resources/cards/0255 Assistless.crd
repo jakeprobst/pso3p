@@ -1,0 +1,8 @@
+Assist:
+  num: 255
+  name: Assistless
+  cost: 2
+  time: 5
+  target: Everyone
+  ability:
+    - AssistBanned

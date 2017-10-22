@@ -1,0 +1,8 @@
+Assist:
+  num: 299
+  name: Charity
+  cost: 2
+  time: 6
+  target: Self
+  ability:
+    - DiceBonus

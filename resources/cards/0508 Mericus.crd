@@ -1,0 +1,28 @@
+Monster:
+  num: 508
+  name: Mericus
+  type: ABeast
+  cost: 7
+  hp: 19
+  ap: 7
+  tp: 0
+  mv: 2
+  target: Multiple
+  range:
+    - -+-
+    - -+-
+    - -+-
+    - -+-
+    - -X-
+    - ---
+  toplink:
+    - Red
+  rightlink:
+    - Blue
+    - Red
+    - Purple
+    - Green
+  ability:
+    - SCRecovery
+    - EnemyBonus
+    - SCSlayer
