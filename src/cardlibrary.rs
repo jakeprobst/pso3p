@@ -21,19 +21,17 @@ impl CardLibrary {
         let cardfiles = fs::read_dir("./resources/cards/").unwrap();
         for card in cardfiles {
             let ucard = card.unwrap();
-            println!("{:?}", ucard);
             let mut cfile = fs::File::open(ucard.path()).unwrap();
             let mut cdata = String::new();
             cfile.read_to_string(&mut cdata);
             
-            match serde_yaml::from_str::<Card>(&cdata) {
-                Ok(_) => {},
+            let c: Card = match serde_yaml::from_str::<Card>(&cdata) {
+                Ok(c) => c,
                 Err(m) => {
-                    println!("    {:?},", m);
-                    println!("    {},", m.description().split("`").nth(1).unwrap());
+                    panic!("could not load {}: {}", ucard.path().to_str().unwrap(), m.description())
                 }
-            }
-            //cards.push(c);
+            };
+            cards.push(c);
         }
         
         CardLibrary {
