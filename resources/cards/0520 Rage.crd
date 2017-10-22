@@ -1,5 +1,5 @@
 Action:
-  num: 520
+  id: 520
   name: Rage
   type: Attack
   cost: 2

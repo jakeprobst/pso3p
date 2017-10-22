@@ -1,5 +1,5 @@
 Action:
-  num: 533
+  id: 533
   name: Virus
   type: Attack
   cost: 3

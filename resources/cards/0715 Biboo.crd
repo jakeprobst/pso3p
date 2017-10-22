@@ -1,5 +1,5 @@
 Monster:
-  num: 715
+  id: 715
   name: Biboo
   type: Native
   cost: 5

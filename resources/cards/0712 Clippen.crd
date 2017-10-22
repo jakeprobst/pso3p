@@ -1,5 +1,5 @@
 Monster:
-  num: 712
+  id: 712
   name: Clippen
   type: Native
   cost: 1

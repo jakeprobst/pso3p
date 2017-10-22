@@ -1,5 +1,5 @@
 Monster:
-  num: 116
+  id: 116
   name: Dimenian
   type: Dark
   cost: 2

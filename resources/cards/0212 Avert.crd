@@ -1,5 +1,5 @@
 Action:
-  num: 212
+  id: 212
   name: Avert
   type: Defense
   cost: 1

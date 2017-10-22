@@ -1,5 +1,5 @@
 Monster:
-  num: 124
+  id: 124
   name: Dark Gunner
   type: Dark
   cost: 1

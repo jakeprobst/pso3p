@@ -1,5 +1,5 @@
 Action:
-  num: 226
+  id: 226
   name: Anti
   type: Attack
   cost: 1

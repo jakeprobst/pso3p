@@ -1,5 +1,5 @@
 Action:
-  num: 152
+  id: 152
   name: Rush
   type: Attack
   cost: 6

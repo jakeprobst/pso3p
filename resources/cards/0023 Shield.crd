@@ -1,5 +1,5 @@
 Item:
-  num: 23
+  id: 23
   name: Shield
   type: Shield
   cost: 2

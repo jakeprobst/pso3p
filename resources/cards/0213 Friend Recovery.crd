@@ -1,5 +1,5 @@
 Action:
-  num: 213
+  id: 213
   name: Friend Recovery
   type: Defense
   cost: 4

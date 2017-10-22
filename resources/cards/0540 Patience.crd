@@ -1,5 +1,5 @@
 Action:
-  num: 540
+  id: 540
   name: Patience
   type: Defense
   cost: 2

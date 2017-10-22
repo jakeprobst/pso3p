@@ -1,5 +1,5 @@
 Action:
-  num: 545
+  id: 545
   name: DK Guard
   type: Defense
   cost: 3

@@ -1,5 +1,5 @@
 Action:
-  num: 527
+  id: 527
   name: DK Attack
   type: Attack
   cost: 2

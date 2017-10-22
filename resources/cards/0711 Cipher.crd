@@ -1,5 +1,5 @@
 Monster:
-  num: 711
+  id: 711
   name: Cipher
   type: Native
   cost: 5

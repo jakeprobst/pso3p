@@ -1,5 +1,5 @@
 Item:
-  num: 10
+  id: 10
   name: Handgun
   type: Gun
   cost: 1

@@ -1,5 +1,5 @@
 Action:
-  num: 677
+  id: 677
   name: Sudden Death
   type: Attack
   cost: 4

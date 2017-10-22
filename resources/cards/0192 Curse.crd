@@ -1,5 +1,5 @@
 Action:
-  num: 192
+  id: 192
   name: Curse
   type: Attack
   cost: 1

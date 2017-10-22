@@ -1,5 +1,5 @@
 Action:
-  num: 532
+  id: 532
   name: Hand Break
   type: Attack
   cost: 3

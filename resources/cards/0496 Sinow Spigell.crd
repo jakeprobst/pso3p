@@ -1,5 +1,5 @@
 Monster:
-  num: 496
+  id: 496
   name: Sinow Spigell
   type: Machine
   cost: 5

@@ -1,5 +1,5 @@
 Action:
-  num: 220
+  id: 220
   name: Gibarta
   type: Attack
   cost: 3

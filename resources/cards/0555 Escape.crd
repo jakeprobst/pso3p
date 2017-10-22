@@ -1,5 +1,5 @@
 Action:
-  num: 555
+  id: 555
   name: Escape
   type: Defense
   cost: 3

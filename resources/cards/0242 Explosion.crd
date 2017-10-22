@@ -1,5 +1,5 @@
 Action:
-  num: 242
+  id: 242
   name: Explosion
   type: Attack
   cost: 5

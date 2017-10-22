@@ -1,5 +1,5 @@
 Action:
-  num: 244
+  id: 244
   name: Traitor
   type: Attack
   cost: 2

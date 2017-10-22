@@ -1,5 +1,5 @@
 Action:
-  num: 209
+  id: 209
   name: HP Defense
   type: Defense
   cost: 2

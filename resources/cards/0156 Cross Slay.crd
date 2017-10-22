@@ -1,5 +1,5 @@
 Action:
-  num: 156
+  id: 156
   name: Cross Slay
   type: Attack
   cost: 2

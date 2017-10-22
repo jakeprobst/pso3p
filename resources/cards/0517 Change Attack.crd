@@ -1,5 +1,5 @@
 Action:
-  num: 517
+  id: 517
   name: Change Attack
   type: Attack
   cost: 3

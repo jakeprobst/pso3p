@@ -1,5 +1,5 @@
 Action:
-  num: 525
+  id: 525
   name: AB Attack
   type: Attack
   cost: 2

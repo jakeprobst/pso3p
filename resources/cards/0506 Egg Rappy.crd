@@ -1,5 +1,5 @@
 Monster:
-  num: 506
+  id: 506
   name: Egg Rappy
   type: Native
   cost: 6

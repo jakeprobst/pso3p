@@ -1,5 +1,5 @@
 Action:
-  num: 222
+  id: 222
   name: Zonde
   type: Attack
   cost: 2

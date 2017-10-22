@@ -1,5 +1,5 @@
 Monster:
-  num: 123
+  id: 123
   name: Dark Belra
   type: Dark
   cost: 5

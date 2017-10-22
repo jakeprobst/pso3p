@@ -1,5 +1,5 @@
 Item:
-  num: 15
+  id: 15
   name: DB's Saber
   type: Sword
   cost: 2

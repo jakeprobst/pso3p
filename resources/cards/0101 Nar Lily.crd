@@ -1,5 +1,5 @@
 Monster:
-  num: 101
+  id: 101
   name: Nar Lily
   type: ABeast
   cost: 2

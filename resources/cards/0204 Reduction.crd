@@ -1,5 +1,5 @@
 Action:
-  num: 204
+  id: 204
   name: Reduction
   type: Defense
   cost: 2

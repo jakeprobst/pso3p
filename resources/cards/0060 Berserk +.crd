@@ -1,5 +1,5 @@
 Action:
-  num: 60
+  id: 60
   name: Berserk +
   type: Attack
   cost: 2

@@ -1,5 +1,5 @@
 Monster:
-  num: 456
+  id: 456
   name: Tollaw
   type: Native
   cost: 4

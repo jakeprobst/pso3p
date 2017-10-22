@@ -1,5 +1,5 @@
 Monster:
-  num: 458
+  id: 458
   name: Pal Rappy
   type: Native
   cost: 3

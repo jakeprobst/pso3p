@@ -1,5 +1,5 @@
 Monster:
-  num: 103
+  id: 103
   name: Nano Dragon
   type: ABeast
   cost: 5

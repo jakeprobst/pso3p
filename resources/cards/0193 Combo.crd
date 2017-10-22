@@ -1,5 +1,5 @@
 Action:
-  num: 193
+  id: 193
   name: Combo
   type: Attack
   cost: 2

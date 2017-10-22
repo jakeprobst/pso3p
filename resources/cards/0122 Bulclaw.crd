@@ -1,5 +1,5 @@
 Monster:
-  num: 122
+  id: 122
   name: Bulclaw
   type: Dark
   cost: 3

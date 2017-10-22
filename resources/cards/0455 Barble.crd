@@ -1,5 +1,5 @@
 Monster:
-  num: 455
+  id: 455
   name: Barble
   type: Native
   cost: 3

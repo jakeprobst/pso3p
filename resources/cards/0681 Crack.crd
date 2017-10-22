@@ -1,5 +1,5 @@
 Action:
-  num: 681
+  id: 681
   name: Crack
   type: Attack
   cost: 2

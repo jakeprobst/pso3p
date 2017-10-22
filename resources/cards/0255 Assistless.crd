@@ -1,5 +1,5 @@
 Assist:
-  num: 255
+  id: 255
   name: Assistless
   cost: 2
   time: 5

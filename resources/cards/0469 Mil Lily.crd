@@ -1,5 +1,5 @@
 Monster:
-  num: 469
+  id: 469
   name: Mil Lily
   type: ABeast
   cost: 3

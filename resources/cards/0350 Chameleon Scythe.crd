@@ -1,5 +1,5 @@
 Item:
-  num: 350
+  id: 350
   name: Chameleon Scythe
   type: Sword
   cost: 1

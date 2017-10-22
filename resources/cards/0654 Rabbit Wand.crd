@@ -1,5 +1,5 @@
 Item:
-  num: 654
+  id: 654
   name: Rabbit Wand
   type: Cane
   cost: 2

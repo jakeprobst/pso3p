@@ -1,5 +1,5 @@
 Action:
-  num: 180
+  id: 180
   name: Acid
   type: Attack
   cost: 1

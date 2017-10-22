@@ -1,5 +1,5 @@
 Action:
-  num: 187
+  id: 187
   name: Blood Suck
   type: Attack
   cost: 3

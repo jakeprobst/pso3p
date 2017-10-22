@@ -1,5 +1,5 @@
 Monster:
-  num: 701
+  id: 701
   name: Del Rappy
   type: Dark
   cost: 7

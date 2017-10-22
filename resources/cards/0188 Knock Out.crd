@@ -1,5 +1,5 @@
 Action:
-  num: 188
+  id: 188
   name: Knock Out
   type: Attack
   cost: 3

@@ -1,5 +1,5 @@
 Action:
-  num: 519
+  id: 519
   name: Bind Kill
   type: Attack
   cost: 2

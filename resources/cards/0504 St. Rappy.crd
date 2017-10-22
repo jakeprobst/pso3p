@@ -1,5 +1,5 @@
 Monster:
-  num: 504
+  id: 504
   name: St. Rappy
   type: Native
   cost: 5

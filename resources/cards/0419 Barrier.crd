@@ -1,5 +1,5 @@
 Item:
-  num: 419
+  id: 419
   name: Barrier
   type: Shield
   cost: 1

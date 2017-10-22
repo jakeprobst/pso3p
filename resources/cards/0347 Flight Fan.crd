@@ -1,5 +1,5 @@
 Item:
-  num: 347
+  id: 347
   name: Flight Fan
   type: Sword
   cost: 4

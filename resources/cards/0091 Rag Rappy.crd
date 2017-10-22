@@ -1,5 +1,5 @@
 Monster:
-  num: 91
+  id: 91
   name: Rag Rappy
   type: Native
   cost: 1

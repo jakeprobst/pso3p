@@ -1,5 +1,5 @@
 Action:
-  num: 221
+  id: 221
   name: Rabarta
   type: Attack
   cost: 4

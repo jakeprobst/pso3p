@@ -1,5 +1,5 @@
 Monster:
-  num: 501
+  id: 501
   name: Deldepth
   type: Dark
   cost: 4

@@ -1,5 +1,5 @@
 Monster:
-  num: 110
+  id: 110
   name: Gillchic
   type: Machine
   cost: 2

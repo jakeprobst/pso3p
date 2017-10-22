@@ -1,5 +1,5 @@
 Action:
-  num: 560
+  id: 560
   name: Penetrate Guard
   type: Defense
   cost: 3

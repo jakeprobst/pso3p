@@ -1,5 +1,5 @@
 Action:
-  num: 534
+  id: 534
   name: Drop
   type: Attack
   cost: 2

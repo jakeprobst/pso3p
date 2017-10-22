@@ -1,5 +1,5 @@
 Monster:
-  num: 499
+  id: 499
   name: Sinow Zoa
   type: Machine
   cost: 5

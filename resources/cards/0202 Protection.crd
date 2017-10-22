@@ -1,5 +1,5 @@
 Action:
-  num: 202
+  id: 202
   name: Protection
   type: Defense
   cost: 2

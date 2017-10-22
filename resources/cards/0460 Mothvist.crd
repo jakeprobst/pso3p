@@ -1,5 +1,5 @@
 Monster:
-  num: 460
+  id: 460
   name: Mothvist
   type: Native
   cost: 3

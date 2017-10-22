@@ -1,5 +1,5 @@
 Item:
-  num: 345
+  id: 345
   name: Twin Chakram
   type: Sword
   cost: 4

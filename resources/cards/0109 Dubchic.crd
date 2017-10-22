@@ -1,5 +1,5 @@
 Monster:
-  num: 109
+  id: 109
   name: Dubchic
   type: Machine
   cost: 2

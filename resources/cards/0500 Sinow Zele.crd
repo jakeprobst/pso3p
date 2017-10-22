@@ -1,5 +1,5 @@
 Monster:
-  num: 500
+  id: 500
   name: Sinow Zele
   type: Machine
   cost: 6

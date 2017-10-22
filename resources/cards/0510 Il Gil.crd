@@ -1,5 +1,5 @@
 Monster:
-  num: 510
+  id: 510
   name: Il Gil
   type: Dark
   cost: 5

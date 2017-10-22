@@ -1,5 +1,5 @@
 Action:
-  num: 699
+  id: 699
   name: Meteor
   type: Attack
   cost: 5

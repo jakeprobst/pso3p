@@ -1,5 +1,5 @@
 Action:
-  num: 238
+  id: 238
   name: Shock Wave
   type: Attack
   cost: 3

@@ -1,5 +1,5 @@
 Monster:
-  num: 47
+  id: 47
   name: Pofuilly Slime +
   type: ABeast
   cost: 3

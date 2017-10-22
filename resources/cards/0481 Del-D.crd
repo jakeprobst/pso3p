@@ -1,5 +1,5 @@
 Monster:
-  num: 481
+  id: 481
   name: Del-D
   type: Dark
   cost: 4

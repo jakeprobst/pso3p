@@ -1,5 +1,5 @@
 Monster:
-  num: 485
+  id: 485
   name: Gee
   type: Native
   cost: 1

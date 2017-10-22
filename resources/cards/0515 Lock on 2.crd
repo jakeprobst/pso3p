@@ -1,5 +1,5 @@
 Action:
-  num: 515
+  id: 515
   name: Lock on 2
   type: Attack
   cost: 2

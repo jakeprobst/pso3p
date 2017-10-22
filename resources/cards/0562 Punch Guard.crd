@@ -1,5 +1,5 @@
 Action:
-  num: 562
+  id: 562
   name: Punch Guard
   type: Defense
   cost: 2

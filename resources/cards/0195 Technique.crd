@@ -1,5 +1,5 @@
 Action:
-  num: 195
+  id: 195
   name: Technique
   type: Attack
   cost: 1

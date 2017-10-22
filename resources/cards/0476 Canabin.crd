@@ -1,5 +1,5 @@
 Monster:
-  num: 476
+  id: 476
   name: Canabin
   type: Machine
   cost: 2

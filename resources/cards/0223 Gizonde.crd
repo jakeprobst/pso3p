@@ -1,5 +1,5 @@
 Action:
-  num: 223
+  id: 223
   name: Gizonde
   type: Attack
   cost: 4

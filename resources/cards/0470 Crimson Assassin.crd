@@ -1,5 +1,5 @@
 Monster:
-  num: 470
+  id: 470
   name: Crimson Assassin
   type: ABeast
   cost: 6

@@ -1,5 +1,5 @@
 Character:
-  num: 1
+  id: 1
   name: Orland
   type: Hunter
   class: HUmar

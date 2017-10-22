@@ -1,5 +1,5 @@
 Monster:
-  num: 114
+  id: 114
   name: Sinow Gold
   type: Machine
   cost: 4

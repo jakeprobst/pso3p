@@ -1,5 +1,5 @@
 Action:
-  num: 68
+  id: 68
   name: Beat +
   type: Attack
   cost: 2

@@ -1,5 +1,5 @@
 Assist:
-  num: 300
+  id: 300
   name: Inheritance
   cost: 3
   time: 4

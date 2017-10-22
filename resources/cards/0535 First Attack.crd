@@ -1,5 +1,5 @@
 Action:
-  num: 535
+  id: 535
   name: First Attack
   type: Attack
   cost: 3

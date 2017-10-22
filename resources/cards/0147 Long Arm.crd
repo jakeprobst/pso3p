@@ -1,5 +1,5 @@
 Action:
-  num: 147
+  id: 147
   name: Long Arm
   type: Attack
   cost: 1

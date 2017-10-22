@@ -1,5 +1,5 @@
 Monster:
-  num: 493
+  id: 493
   name: Dolmolm
   type: ABeast
   cost: 4

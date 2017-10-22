@@ -1,5 +1,5 @@
 Monster:
-  num: 27
+  id: 27
   name: Assassin+
   type: ABeast
   cost: 5

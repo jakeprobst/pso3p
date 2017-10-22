@@ -1,5 +1,5 @@
 Action:
-  num: 564
+  id: 564
   name: Resist
   type: Defense
   cost: 4

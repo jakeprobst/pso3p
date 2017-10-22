@@ -1,5 +1,5 @@
 Action:
-  num: 149
+  id: 149
   name: Round Slay
   type: Attack
   cost: 3

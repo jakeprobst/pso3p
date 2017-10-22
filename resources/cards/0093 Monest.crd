@@ -1,5 +1,5 @@
 Monster:
-  num: 93
+  id: 93
   name: Monest
   type: Native
   cost: 2

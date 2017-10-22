@@ -1,5 +1,5 @@
 Monster:
-  num: 459
+  id: 459
   name: Mothvert
   type: Native
   cost: 1

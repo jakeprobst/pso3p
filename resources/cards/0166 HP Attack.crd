@@ -1,5 +1,5 @@
 Action:
-  num: 166
+  id: 166
   name: HP Attack
   type: Attack
   cost: 3

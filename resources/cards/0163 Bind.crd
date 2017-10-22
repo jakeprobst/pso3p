@@ -1,5 +1,5 @@
 Action:
-  num: 163
+  id: 163
   name: Bind
   type: Attack
   cost: 2

@@ -1,5 +1,5 @@
 Action:
-  num: 665
+  id: 665
   name: Parry
   type: Defense
   cost: 4

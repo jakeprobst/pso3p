@@ -1,5 +1,5 @@
 Action:
-  num: 679
+  id: 679
   name: Death Ray
   type: Attack
   cost: 2

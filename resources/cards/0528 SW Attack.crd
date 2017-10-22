@@ -1,5 +1,5 @@
 Action:
-  num: 528
+  id: 528
   name: SW Attack
   type: Attack
   cost: 2

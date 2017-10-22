@@ -1,5 +1,5 @@
 Action:
-  num: 154
+  id: 154
   name: Stab
   type: Attack
   cost: 2

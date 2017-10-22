@@ -1,5 +1,5 @@
 Action:
-  num: 556
+  id: 556
   name: Grow Guard
   type: Defense
   cost: 1

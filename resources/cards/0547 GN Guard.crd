@@ -1,5 +1,5 @@
 Action:
-  num: 547
+  id: 547
   name: GN Guard
   type: Defense
   cost: 4

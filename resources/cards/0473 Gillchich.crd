@@ -1,5 +1,5 @@
 Monster:
-  num: 473
+  id: 473
   name: Gillchich
   type: Machine
   cost: 3

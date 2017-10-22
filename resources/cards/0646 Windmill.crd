@@ -1,5 +1,5 @@
 Item:
-  num: 646
+  id: 646
   name: Windmill
   type: Cane
   cost: 4

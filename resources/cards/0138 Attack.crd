@@ -1,5 +1,5 @@
 Action:
-  num: 138
+  id: 138
   name: Attack
   type: Attack
   cost: 1

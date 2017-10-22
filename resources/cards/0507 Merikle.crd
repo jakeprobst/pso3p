@@ -1,5 +1,5 @@
 Monster:
-  num: 507
+  id: 507
   name: Merikle
   type: ABeast
   cost: 7

@@ -1,5 +1,5 @@
 Monster:
-  num: 487
+  id: 487
   name: Ul Gibbon
   type: Native
   cost: 4

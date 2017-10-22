@@ -1,5 +1,5 @@
 Action:
-  num: 678
+  id: 678
   name: Restrict Wave
   type: Attack
   cost: 3

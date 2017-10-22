@@ -1,5 +1,5 @@
 Action:
-  num: 172
+  id: 172
   name: Half Attack
   type: Attack
   cost: 1

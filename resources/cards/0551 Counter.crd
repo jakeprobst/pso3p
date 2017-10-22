@@ -1,5 +1,5 @@
 Action:
-  num: 551
+  id: 551
   name: Counter
   type: Defense
   cost: 4

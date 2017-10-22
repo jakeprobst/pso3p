@@ -1,5 +1,5 @@
 Action:
-  num: 179
+  id: 179
   name: Double-Edged Dice
   type: Attack
   cost: 4

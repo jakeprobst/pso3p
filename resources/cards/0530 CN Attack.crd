@@ -1,5 +1,5 @@
 Action:
-  num: 530
+  id: 530
   name: CN Attack
   type: Attack
   cost: 2

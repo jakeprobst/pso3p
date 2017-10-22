@@ -1,5 +1,5 @@
 Action:
-  num: 203
+  id: 203
   name: Wall
   type: Defense
   cost: 2

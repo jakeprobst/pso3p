@@ -1,5 +1,5 @@
 Monster:
-  num: 503
+  id: 503
   name: Delbiter
   type: Dark
   cost: 7

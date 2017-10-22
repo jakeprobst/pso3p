@@ -1,5 +1,5 @@
 Action:
-  num: 146
+  id: 146
   name: Left Heavy Punch
   type: Attack
   cost: 4

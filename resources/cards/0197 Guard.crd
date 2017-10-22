@@ -1,5 +1,5 @@
 Action:
-  num: 197
+  id: 197
   name: Guard
   type: Defense
   cost: 2

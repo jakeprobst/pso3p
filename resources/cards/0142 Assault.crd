@@ -1,5 +1,5 @@
 Action:
-  num: 142
+  id: 142
   name: Assault
   type: Attack
   cost: 2

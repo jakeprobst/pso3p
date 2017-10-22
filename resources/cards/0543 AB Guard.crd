@@ -1,5 +1,5 @@
 Action:
-  num: 543
+  id: 543
   name: AB Guard
   type: Defense
   cost: 3

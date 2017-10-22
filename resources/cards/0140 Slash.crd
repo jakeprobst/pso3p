@@ -1,5 +1,5 @@
 Action:
-  num: 140
+  id: 140
   name: Slash
   type: Attack
   cost: 2

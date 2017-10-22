@@ -1,5 +1,5 @@
 Action:
-  num: 153
+  id: 153
   name: Chaotic Attack
   type: Attack
   cost: 2

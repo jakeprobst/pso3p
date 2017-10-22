@@ -1,5 +1,5 @@
 Action:
-  num: 145
+  id: 145
   name: Right Heavy Punch
   type: Attack
   cost: 5

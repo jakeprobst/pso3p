@@ -1,5 +1,5 @@
 Monster:
-  num: 475
+  id: 475
   name: Sinow Red
   type: Machine
   cost: 5

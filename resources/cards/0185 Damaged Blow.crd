@@ -1,5 +1,5 @@
 Action:
-  num: 185
+  id: 185
   name: Damaged Blow
   type: Attack
   cost: 4

@@ -1,5 +1,5 @@
 Monster:
-  num: 98
+  id: 98
   name: Pal Shark
   type: ABeast
   cost: 2

@@ -1,5 +1,5 @@
 Monster:
-  num: 90
+  id: 90
   name: Barbarous Wolf
   type: Native
   cost: 3

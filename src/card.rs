@@ -422,7 +422,7 @@ pub type Range = Vec<String>;
 
 #[derive(Serialize, Deserialize)]
 pub struct CharacterCard {
-    pub num: u32,
+    pub id: u32,
     pub name: String,
     #[serde(rename = "type")]
     pub ctype: CharacterType,
@@ -440,38 +440,38 @@ pub struct CharacterCard {
 
 #[derive(Serialize, Deserialize)]
 pub struct ItemCard {
-    num: u32,
-    name: String,
+    pub id: u32,
+    pub name: String,
     #[serde(rename = "type")]
-    ctype: ItemType,
-    cost: u8,
-    hp: u8,
-    ap: u8,
-    tp: u8,
-    mv: u8,
-    target: TargetType,
-    range: Range,
-    toplink: Vec<ActionLink>,
-    rightlink: Vec<ActionLink>,
-    ability: Vec<Ability>,
+    pub ctype: ItemType,
+    pub cost: u8,
+    pub hp: u8,
+    pub ap: u8,
+    pub tp: u8,
+    pub mv: u8,
+    pub target: TargetType,
+    pub range: Range,
+    pub toplink: Vec<ActionLink>,
+    pub rightlink: Vec<ActionLink>,
+    pub ability: Vec<Ability>,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct MonsterCard {
-    num: u32,
-    name: String,
+    pub id: u32,
+    pub name: String,
     #[serde(rename = "type")]
-    ctype: MonsterType,
-    cost: u8,
-    hp: u8,
-    ap: u8,
-    tp: u8,
-    mv: u8,
-    target: TargetType,
-    range: Range,
-    toplink: Vec<ActionLink>,
-    rightlink: Vec<ActionLink>,
-    ability: Vec<Ability>,
+    pub ctype: MonsterType,
+    pub cost: u8,
+    pub hp: u8,
+    pub ap: u8,
+    pub tp: u8,
+    pub mv: u8,
+    pub target: TargetType,
+    pub range: Range,
+    pub toplink: Vec<ActionLink>,
+    pub rightlink: Vec<ActionLink>,
+    pub ability: Vec<Ability>,
 }
 
 
@@ -484,37 +484,37 @@ pub enum ActionType {
 
 #[derive(Serialize, Deserialize)]
 pub struct ActionCard {
-    num: u32,
-    name: String,
+    pub id: u32,
+    pub name: String,
     #[serde(rename = "type")]
-    ctype: ActionType,
-    cost: u8,
-    hp: u8,
-    ap: u8,
-    tp: u8,
-    mv: u8, // TODO: I think I can get rid of this
-    target: TargetType,
-    range: Range,
-    leftlink: Vec<ActionLink>,
-    toplink: Vec<ActionLink>,
-    rightlink: Vec<ActionLink>,
-    ability: Vec<Ability>,
+    pub ctype: ActionType,
+    pub cost: u8,
+    pub hp: u8,
+    pub ap: u8,
+    pub tp: u8,
+    pub mv: u8, // TODO: I think I can get rid of this
+    pub target: TargetType,
+    pub range: Range,
+    pub leftlink: Vec<ActionLink>,
+    pub toplink: Vec<ActionLink>,
+    pub rightlink: Vec<ActionLink>,
+    pub ability: Vec<Ability>,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct AssistCard {
-    num: u32,
-    name: String,
-    cost: u8,
-    time: u8,
-    target: TargetType,
-    ability: Vec<Ability>,
+    pub id: u32,
+    pub name: String,
+    pub cost: u8,
+    pub time: u8,
+    pub target: TargetType,
+    pub ability: Vec<Ability>,
 }
 
 
 #[derive(Serialize, Deserialize)]
 pub struct BossCard {
-    pub num: u32,
+    pub id: u32,
     pub name: String,
     pub hp: i8,
     pub ap: i8,

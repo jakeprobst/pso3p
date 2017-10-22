@@ -1,5 +1,5 @@
 Action:
-  num: 243
+  id: 243
   name: Punishment
   type: Attack
   cost: 3

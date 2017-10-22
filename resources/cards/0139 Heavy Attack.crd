@@ -1,5 +1,5 @@
 Action:
-  num: 139
+  id: 139
   name: Heavy Attack
   type: Attack
   cost: 3

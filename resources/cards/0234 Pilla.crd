@@ -1,5 +1,5 @@
 Action:
-  num: 234
+  id: 234
   name: Pilla
   type: PhotonBlast
   cost: 4

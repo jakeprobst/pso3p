@@ -1,5 +1,5 @@
 Action:
-  num: 561
+  id: 561
   name: Punch Return
   type: Defense
   cost: 4

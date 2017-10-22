@@ -1,5 +1,5 @@
 Action:
-  num: 233
+  id: 233
   name: Golla
   type: PhotonBlast
   cost: 4

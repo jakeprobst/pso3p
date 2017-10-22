@@ -1,5 +1,5 @@
 Action:
-  num: 62
+  id: 62
   name: Thread +
   type: Attack
   cost: 2

@@ -1,5 +1,5 @@
 Action:
-  num: 216
+  id: 216
   name: Foie
   type: Attack
   cost: 2

@@ -1,5 +1,5 @@
 Action:
-  num: 148
+  id: 148
   name: Snipe
   type: Attack
   cost: 2

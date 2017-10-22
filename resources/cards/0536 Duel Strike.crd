@@ -1,5 +1,5 @@
 Action:
-  num: 536
+  id: 536
   name: Duel Strike
   type: Attack
   cost: 3

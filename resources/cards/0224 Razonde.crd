@@ -1,5 +1,5 @@
 Action:
-  num: 224
+  id: 224
   name: Razonde
   type: Attack
   cost: 4

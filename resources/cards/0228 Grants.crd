@@ -1,5 +1,5 @@
 Action:
-  num: 228
+  id: 228
   name: Grants
   type: Attack
   cost: 6

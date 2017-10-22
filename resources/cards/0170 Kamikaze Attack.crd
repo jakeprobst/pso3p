@@ -1,5 +1,5 @@
 Action:
-  num: 170
+  id: 170
   name: Kamikaze Attack
   type: Attack
   cost: 3

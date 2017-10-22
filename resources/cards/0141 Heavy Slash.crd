@@ -1,5 +1,5 @@
 Action:
-  num: 141
+  id: 141
   name: Heavy Slash
   type: Attack
   cost: 3

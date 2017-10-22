@@ -1,5 +1,5 @@
 Action:
-  num: 531
+  id: 531
   name: SH Attack
   type: Attack
   cost: 2

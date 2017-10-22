@@ -1,5 +1,5 @@
 Action:
-  num: 518
+  id: 518
   name: Shock Blow
   type: Attack
   cost: 2

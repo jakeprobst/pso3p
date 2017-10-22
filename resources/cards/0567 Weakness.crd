@@ -1,5 +1,5 @@
 Action:
-  num: 567
+  id: 567
   name: Weakness
   type: Defense
   cost: 3

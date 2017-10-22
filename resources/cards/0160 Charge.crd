@@ -1,5 +1,5 @@
 Action:
-  num: 160
+  id: 160
   name: Charge
   type: Attack
   cost: 3

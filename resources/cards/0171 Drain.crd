@@ -1,5 +1,5 @@
 Action:
-  num: 171
+  id: 171
   name: Drain
   type: Attack
   cost: 3

@@ -1,5 +1,5 @@
 Action:
-  num: 165
+  id: 165
   name: TP Attack
   type: Attack
   cost: 1

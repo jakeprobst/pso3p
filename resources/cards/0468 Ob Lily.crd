@@ -1,5 +1,5 @@
 Monster:
-  num: 468
+  id: 468
   name: Ob Lily
   type: ABeast
   cost: 2

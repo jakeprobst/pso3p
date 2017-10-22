@@ -1,5 +1,5 @@
 Action:
-  num: 570
+  id: 570
   name: Inversion
   type: Defense
   cost: 3

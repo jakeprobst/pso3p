@@ -1,5 +1,5 @@
 Monster:
-  num: 50
+  id: 50
   name: Sinow Beat +
   type: Machine
   cost: 3

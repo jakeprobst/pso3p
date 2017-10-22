@@ -1,5 +1,5 @@
 Action:
-  num: 167
+  id: 167
   name: Penetrate
   type: Attack
   cost: 4

@@ -1,5 +1,5 @@
 Action:
-  num: 522
+  id: 522
   name: Snatch
   type: Attack
   cost: 3

@@ -1,5 +1,5 @@
 Action:
-  num: 241
+  id: 241
   name: Last Judgement
   type: Attack
   cost: 3

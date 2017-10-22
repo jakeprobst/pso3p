@@ -1,5 +1,5 @@
 Action:
-  num: 565
+  id: 565
   name: Decline
   type: Defense
   cost: 3

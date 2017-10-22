@@ -1,5 +1,5 @@
 Action:
-  num: 230
+  id: 230
   name: Shifta
   type: Attack
   cost: 2

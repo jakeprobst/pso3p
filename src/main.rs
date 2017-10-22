@@ -136,7 +136,7 @@ fn convert_cards() {
         match c.ttype.as_ref() {
             "Hunter" | "Arkz" => {
                 writeln!(of, "Character:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  type: {}", c.ttype);
                 writeln!(of, "  class: {}", c.class);
@@ -152,7 +152,7 @@ fn convert_cards() {
             }
             "Item" => {
                 writeln!(of, "Item:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  type: {}", c.class.replace("Guard", "Shield"));
                 writeln!(of, "  cost: {}", c.cost);
@@ -171,7 +171,7 @@ fn convert_cards() {
             }
             "Creature" => {
                 writeln!(of, "Monster:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  type: {}", c.class.replace(".", ""));
                 writeln!(of, "  cost: {}", c.cost);
@@ -187,7 +187,7 @@ fn convert_cards() {
             }
             "Action" => {
                 writeln!(of, "Action:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  type: {}", c.class.replace(" ", ""));
                 writeln!(of, "  cost: {}", c.cost);
@@ -204,7 +204,7 @@ fn convert_cards() {
             }
             "Assist" => {
                 writeln!(of, "Assist:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  cost: {}", c.cost);
                 writeln!(of, "  time: {}", if c.assisttime == -1 { 255 } else { c.assisttime as u8});
@@ -214,7 +214,7 @@ fn convert_cards() {
 
             "Boss" => {
                 writeln!(of, "Boss:");
-                writeln!(of, "  num: {}", c.num);
+                writeln!(of, "  id: {}", c.num);
                 writeln!(of, "  name: {}", c.name);
                 writeln!(of, "  hp: {}", c.hp);
                 writeln!(of, "  ap: {}", c.ap);

@@ -1,5 +1,5 @@
 Action:
-  num: 526
+  id: 526
   name: MC Attack
   type: Attack
   cost: 2

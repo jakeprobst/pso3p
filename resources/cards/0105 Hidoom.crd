@@ -1,5 +1,5 @@
 Monster:
-  num: 105
+  id: 105
   name: Hidoom
   type: ABeast
   cost: 1

@@ -1,5 +1,5 @@
 Action:
-  num: 198
+  id: 198
   name: Dodge
   type: Defense
   cost: 1

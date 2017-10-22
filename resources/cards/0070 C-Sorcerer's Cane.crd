@@ -1,5 +1,5 @@
 Item:
-  num: 70
+  id: 70
   name: C-Sorcerer's Cane
   type: Cane
   cost: 6

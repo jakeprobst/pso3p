@@ -1,5 +1,5 @@
 Action:
-  num: 63
+  id: 63
   name: Counter +
   type: Defense
   cost: 3

@@ -1,5 +1,5 @@
 Item:
-  num: 640
+  id: 640
   name: Burning Visit
   type: Gun
   cost: 5

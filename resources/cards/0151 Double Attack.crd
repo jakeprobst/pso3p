@@ -1,5 +1,5 @@
 Action:
-  num: 151
+  id: 151
   name: Double Attack
   type: Attack
   cost: 3

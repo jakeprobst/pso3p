@@ -1,5 +1,5 @@
 Monster:
-  num: 480
+  id: 480
   name: Merlan
   type: Dark
   cost: 4

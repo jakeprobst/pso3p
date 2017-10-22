@@ -1,5 +1,5 @@
 Monster:
-  num: 502
+  id: 502
   name: Morfos
   type: Dark
   cost: 5

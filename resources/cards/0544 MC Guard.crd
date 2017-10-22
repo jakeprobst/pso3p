@@ -1,5 +1,5 @@
 Action:
-  num: 544
+  id: 544
   name: MC Guard
   type: Defense
   cost: 3

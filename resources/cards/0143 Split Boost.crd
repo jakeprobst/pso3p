@@ -1,5 +1,5 @@
 Action:
-  num: 143
+  id: 143
   name: Split Boost
   type: Attack
   cost: 2
