@@ -257,16 +257,16 @@ fn main() {
 
     
 
-    convert_cards();
+    //convert_cards();
 
 
-    println!("-----------");
+    //println!("-----------");
     let card_library = CardLibrary::new();
     
     let mut sim = PSO3Simulation::new(Field::new(), Deck::new(), Deck::new());
     sim.apply_action(Action::RollForFirstPlayer);
 
-    let a = Card::Character(CharacterCard {
+    /*let a = Card::Character(CharacterCard {
         num:  1,
         name: "Orland".to_string(),
         ctype: CharacterType::Hunter,
@@ -285,7 +285,7 @@ fn main() {
 
     if let Ok(z) = serde_yaml::to_string(&a) {
         println!("[{}]", z);
-    }
+    }*/
 
 
 
