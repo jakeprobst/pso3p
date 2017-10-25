@@ -38,4 +38,43 @@ impl CardLibrary {
             cards: cards,
         }
     }
+
+    pub fn get_by_id(&self, id: u32) -> Option<Card> {
+        for c in &self.cards {
+            match *c {
+                Card::Character(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+                Card::Item(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+                Card::Monster(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+                Card::Action(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+                Card::Assist(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+                Card::Boss(ref c2) => {
+                    if c2.id == id {
+                        return Some(c.clone());
+                    }
+                }
+            }
+        }
+        None
+    }
+
 }
