@@ -5,6 +5,7 @@ use action::Action;
 use statechange::StateChange;
 use error::SimulationError;
 
+#[derive(Debug)]
 pub enum PhaseType {
     GameStart,
     PreGameDiscard,

@@ -296,7 +296,7 @@ fn main() {
     let deck2 = db.deck().unwrap();    
     
     let mut sim = PSO3Simulation::new(Field::new(), deck1, deck2);
-    sim.apply_action(Action::RollForFirstPlayer);
+    println!("{:#?}", sim.apply_action(Action::RollForFirstPlayer));
 
     /*let a = Card::Character(CharacterCard {
         num:  1,

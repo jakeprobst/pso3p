@@ -4,9 +4,10 @@ use pso3simulation::PSO3State;
 use action::Action;
 use phase::phase::{Phase, PhaseType};
 use error::SimulationError;
-use statechange::{StateChange, TurnOrder};
+use statechange::{StateChange};
 use phase::pregamediscard::PreGameDiscard;
 
+#[derive(Debug)]
 pub struct Roll;
 
 impl Roll {

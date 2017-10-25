@@ -8,6 +8,7 @@ use player::PlayerId;
 use phase::roll::Roll;
 
 
+#[derive(Debug)]
 pub struct PreGameDiscard {
     p1done: bool,
     p2done: bool,

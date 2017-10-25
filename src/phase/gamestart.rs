@@ -4,9 +4,10 @@ use pso3simulation::PSO3State;
 use action::Action;
 use phase::phase::{Phase, PhaseType};
 use error::SimulationError;
-use statechange::{StateChange, TurnOrder};
+use statechange::{StateChange};
 use phase::pregamediscard::PreGameDiscard;
 
+#[derive(Debug)]
 pub struct GameStart;
 
 impl GameStart {
@@ -29,15 +30,34 @@ impl GameStart {
 
         state.active_player = Some(active_player);
 
-        // TODO: fill hands
-
+        state.player1.deck.shuffle(&mut state.rng);
+        state.player2.deck.shuffle(&mut state.rng);
         
-        (vec![StateChange::TurnOrder(TurnOrder {
+        let mut actions = Vec::new();
+        
+        for _ in 0..5 {
+            let p1card = state.player1.deck.draw();
+            actions.push(StateChange::DrawCard {
+                player: PlayerId::One,
+                card: p1card.clone()
+            });
+            state.player1.hand.push(p1card);
+
+            let p2card = state.player2.deck.draw();
+            actions.push(StateChange::DrawCard {
+                player: PlayerId::Two,
+                card: p2card.clone()
+            });
+            state.player2.hand.push(p2card);
+        }
+
+        actions.push(StateChange::TurnOrder {
             player1_roll: p1roll,
             player2_roll: p2roll,
             active_player: active_player,
-        })],
-         Some(Box::new(PreGameDiscard::new())))
+        });
+        
+        (actions, Some(Box::new(PreGameDiscard::new())))
     }
 }
 
