@@ -8,6 +8,7 @@ use player::PlayerId;
 
 
 
+#[derive(Debug)]
 pub enum Action {
     RollForFirstPlayer,
     DiscardHand(PlayerId),

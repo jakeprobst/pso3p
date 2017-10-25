@@ -4,7 +4,7 @@ use card::Card;
 use deck::Deck;
 
 
-#[derive(Copy, Clone)]
+#[derive(Debug, Copy, Clone)]
 pub enum PlayerId {
     One,
     Two,
@@ -12,7 +12,7 @@ pub enum PlayerId {
 
 
 
-
+#[derive(Debug)]
 pub struct Player {
     pub hand: Vec<Card>,
     pub deck: Deck,

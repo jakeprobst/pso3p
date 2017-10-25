@@ -3,13 +3,11 @@
 
 
 use card::{Card, CharacterCard};
-use std;
-use std::result::Result;
-use std::option::Option;
 use rand::Rng;
 
 
 
+#[derive(Debug)]
 pub enum DeckType {
     Hunter,
     Arkz,
@@ -24,6 +22,7 @@ pub enum DeckError {
     InvalidCard(Card),
 }
 
+#[derive(Debug)]
 pub struct DeckBuilder {
     dtype: Option<DeckType>,
     story_character: Option<Card>,
@@ -59,7 +58,7 @@ impl DeckBuilder {
         true
     }
     
-    pub fn deck(self) -> std::result::Result<Deck, DeckError> {
+    pub fn deck(self) -> Result<Deck, DeckError> {
         Ok(Deck {
             dtype: self.dtype.unwrap(),
             story_character: self.story_character.unwrap(),
@@ -68,6 +67,7 @@ impl DeckBuilder {
     }
 }
 
+#[derive(Debug)]
 pub struct Deck {
     story_character: Card,
     dtype: DeckType,
@@ -80,11 +80,11 @@ pub struct Deck {
 
 impl Deck {
     pub fn shuffle<R: Rng>(&mut self, rng: &mut R)  {
-        rng.shuffle(self.cards);
+        rng.shuffle(self.cards.as_mut_slice());
     }
 
     pub fn draw(&mut self) -> Card {
-        self.cards.pop()
+        self.cards.pop().unwrap()
     }
 
     pub fn discard(&mut self, card: Card) {

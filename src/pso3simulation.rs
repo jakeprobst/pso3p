@@ -15,6 +15,7 @@ use statechange::StateChange;
 use rand::{StdRng, SeedableRng};
 
 
+#[derive(Debug)]
 pub struct PSO3State {
     pub rng: StdRng,
     boardstate: BoardState,

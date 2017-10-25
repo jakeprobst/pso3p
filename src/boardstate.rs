@@ -6,6 +6,7 @@
 
 
 
+#[derive(Debug)]
 pub struct BoardState {
 }
 
