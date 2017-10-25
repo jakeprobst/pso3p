@@ -4,7 +4,7 @@
 
 
 // TODO: bother with boss only colors?
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum ActionLink {
     Red,
     Yellow,
@@ -18,7 +18,7 @@ pub enum ActionLink {
     Amplum,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum MonsterType {
     Native,
     ABeast,
@@ -26,7 +26,7 @@ pub enum MonsterType {
     Dark,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum ItemType {
     Sword,
     Gun,
@@ -36,13 +36,13 @@ pub enum ItemType {
 }
 
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum CharacterType {
     Hunter,
     Arkz,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum CharacterClass {
     HUmar,
     HUnewearl,
@@ -58,7 +58,7 @@ pub enum CharacterClass {
     FOnewearl,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum TargetType {
     Single,
     Multiple,
@@ -70,7 +70,7 @@ pub enum TargetType {
     None,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum Ability {
     ABeastAPBoost,
     ABeastAPCount,
@@ -413,14 +413,14 @@ pub enum Ability {
 
 
 // TODO: how the fuck should I do this?
-//#[derive(Serialize, Deserialize)]
+//#[derive(Serialize, Deserialize, Debug, Clone)]
 pub type Range = Vec<String>;
 /*pub struct Range {
     
 }*/
 
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct CharacterCard {
     pub id: u32,
     pub name: String,
@@ -438,7 +438,7 @@ pub struct CharacterCard {
     pub ability: Vec<Ability>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ItemCard {
     pub id: u32,
     pub name: String,
@@ -456,7 +456,7 @@ pub struct ItemCard {
     pub ability: Vec<Ability>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct MonsterCard {
     pub id: u32,
     pub name: String,
@@ -475,14 +475,14 @@ pub struct MonsterCard {
 }
 
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum ActionType {
     Attack,
     Defense,
     PhotonBlast
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ActionCard {
     pub id: u32,
     pub name: String,
@@ -501,7 +501,7 @@ pub struct ActionCard {
     pub ability: Vec<Ability>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct AssistCard {
     pub id: u32,
     pub name: String,
@@ -512,7 +512,7 @@ pub struct AssistCard {
 }
 
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BossCard {
     pub id: u32,
     pub name: String,
@@ -528,7 +528,7 @@ pub struct BossCard {
 }
 
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum Card {
     Character(CharacterCard),
     Item(ItemCard),
