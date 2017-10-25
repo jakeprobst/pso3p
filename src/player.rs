@@ -14,8 +14,8 @@ pub enum PlayerId {
 
 
 pub struct Player {
-    hand: Vec<Card>,
-    deck: Deck,
+    pub hand: Vec<Card>,
+    pub deck: Deck,
     experience: usize,
 }
 
