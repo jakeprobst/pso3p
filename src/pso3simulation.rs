@@ -12,14 +12,15 @@ use phase::phase::Phase;
 use phase::gamestart::GameStart;
 use error::SimulationError;
 use statechange::StateChange;
-
+use rand::{StdRng, SeedableRng};
 
 
 pub struct PSO3State {
+    pub rng: StdRng,
     boardstate: BoardState,
     pub active_player: Option<PlayerId>,
-    player1: Player,
-    player2: Player,
+    pub player1: Player,
+    pub player2: Player,
 }
 
 
@@ -37,6 +38,7 @@ impl PSO3Simulation {
         PSO3Simulation {
             phase: Box::new(GameStart::new()),
             state: PSO3State {
+                rng: StdRng::from_seed(&[1,2,3,4]),
                 boardstate: BoardState::new(),
                 active_player: None,
                 player1: Player::new(p1deck),
