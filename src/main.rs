@@ -21,9 +21,10 @@ mod cardlibrary;
 use action::Action;
 //use player::Player;
 use pso3simulation::PSO3Simulation;
-use deck::Deck;
+use deck::{Deck, DeckBuilder, DeckType};
 use field::Field;
 use cardlibrary::CardLibrary;
+
 
 use card::*;
 use std::fs;
@@ -263,8 +264,38 @@ fn main() {
 
     //println!("-----------");
     let card_library = CardLibrary::new();
+
+
+    //let deck1 = Deck::new(DeckType::Hunter);
+    //let deck2 = Deck::new(DeckType::Arkz);
+
+    println!("{:?}", card_library.get_by_id(1).unwrap());
+
+
+    let mut db = DeckBuilder::new()
+        .faction(DeckType::Hunter)
+        .character(card_library.get_by_id(1).unwrap());
     
-    let mut sim = PSO3Simulation::new(Field::new(), Deck::new(), Deck::new());
+    for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 253, 246] {
+        for _ in 0..3 {
+            db = db.card(card_library.get_by_id(c).unwrap());
+        }
+    }
+    let deck1 = db.deck().unwrap();
+
+
+    let mut db = DeckBuilder::new()
+        .faction(DeckType::Hunter)
+        .character(card_library.get_by_id(2).unwrap());
+    
+    for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 253, 246] {
+        for _ in 0..3 {
+            db = db.card(card_library.get_by_id(c).unwrap());
+        }
+    }
+    let deck2 = db.deck().unwrap();    
+    
+    let mut sim = PSO3Simulation::new(Field::new(), deck1, deck2);
     sim.apply_action(Action::RollForFirstPlayer);
 
     /*let a = Card::Character(CharacterCard {
