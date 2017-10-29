@@ -1,6 +1,9 @@
 
+use std::sync::atomic::{AtomicU64, Ordering, ATOMIC_U64_INIT};
 
+use player::PlayerId;
 
+pub type CardId = u64;
 
 
 // TODO: bother with boss only colors?
@@ -541,9 +544,30 @@ pub enum Card {
 
 
 
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct CardInstance {
-    card_id: u32,
-    card: Card,
+    id: CardId,
+    pub card: Card,
 }
 
 
+static CARD_ID: AtomicU64 =  ATOMIC_U64_INIT;
+
+fn new_card_id() -> CardId {
+    CARD_ID.fetch_add(1, Ordering::SeqCst)
+}
+
+
+
+impl CardInstance {
+    pub fn new(card: Card) -> CardInstance {
+        CardInstance {
+            id: new_card_id(),
+            card: card,
+        }
+    }
+
+    pub fn id(&self) -> CardId {
+        self.id
+    }
+}
