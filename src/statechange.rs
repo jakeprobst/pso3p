@@ -1,23 +1,36 @@
 use player::PlayerId;
 use phase::phase::PhaseType;
-use card::Card;
+use card::{CardInstance, CardId};
 
 
 #[derive(Debug)]
 pub enum StateChange {
     NoOp,
-    TurnOrder {
+    TurnOrderRolls {
         player1_roll: u8,
         player2_roll: u8,
-        active_player: PlayerId,
     },
-
+    TurnChange {
+        player: PlayerId,
+    },
+    AtkDefDiceRoll {
+        player: PlayerId,
+        atk: u8,
+        def: u8,
+    },
     PhaseChange(PhaseType),
 
     DrawCard {
         player: PlayerId,
-        card: Card,
+        card: CardInstance,
     },
 
-    Discard(Card),
+    /*DiscardHand {
+        player: PlayerId,
+    },*/
+
+    DiscardCard {
+        player: PlayerId,
+        card: CardId,
+    }
 }

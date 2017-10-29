@@ -16,11 +16,12 @@ mod player;
 mod phase;
 mod pso3simulation;
 mod field;
+mod fieldobject;
 mod error;
 mod statechange;
 mod cardlibrary;
 
-use action::Action;
+use action::{Action, PlayerAction};
 //use player::Player;
 use pso3simulation::PSO3Simulation;
 use deck::{Deck, DeckBuilder, DeckType};
@@ -298,7 +299,8 @@ fn main() {
     let deck2 = db.deck().unwrap();    
     
     let mut sim = PSO3Simulation::new(Field::new(), deck1, deck2);
-    println!("{:#?}", sim.apply_action(Action::RollForFirstPlayer));
+    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::RollForFirst)));
+    println!("{:#?}", sim.apply_action(Action::Player2(PlayerAction::RollForFirst)));
 
     /*let a = Card::Character(CharacterCard {
         num:  1,

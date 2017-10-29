@@ -25,6 +25,11 @@ pub struct PSO3State {
 }
 
 
+
+
+
+
+
 pub struct PSO3Simulation {
     phase: Box<Phase>,
     state: PSO3State,
@@ -39,11 +44,12 @@ impl PSO3Simulation {
         PSO3Simulation {
             phase: Box::new(GameStart::new()),
             state: PSO3State {
-                rng: StdRng::from_seed(&[1,2,3,4]),
+                //rng: StdRng::from_seed(&[1,2,3,4]),
+                rng: StdRng::new().unwrap(),
                 boardstate: BoardState::new(),
                 active_player: None,
-                player1: Player::new(p1deck),
-                player2: Player::new(p2deck),
+                player1: Player::new(PlayerId::One, p1deck),
+                player2: Player::new(PlayerId::Two, p2deck),
             }
         }
     }

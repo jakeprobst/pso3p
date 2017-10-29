@@ -1,12 +1,12 @@
 
 use pso3simulation::PSO3State;
-use action::Action;
+use action::{Action, PlayerAction};
 use phase::phase::{Phase, PhaseType};
 use error::SimulationError;
 use statechange::{StateChange, };
-use player::PlayerId;
+use player::Player;
 use phase::roll::Roll;
-
+use card::CardInstance;
 
 #[derive(Debug)]
 pub struct PreGameDiscard {
@@ -32,56 +32,57 @@ impl PreGameDiscard {
         }
     }
 
-    fn discard_hand(&mut self, state: &mut PSO3State, pid: PlayerId) -> (Vec<StateChange>, Option<Box<Phase>>) {
-        match pid {
-            PlayerId::One => {
-                if self.p1done == false {
-                    self.p1done = true;
-                    // TODO: discard hand
-                    (vec![StateChange::NoOp], None)
-                }
-                else {
-                    (vec![StateChange::NoOp], None)
-                }
-            }
-            PlayerId::Two => {
-                if self.p2done == false {
-                    self.p2done = true;
-                    // TODO: discard hand
-                    (vec![StateChange::NoOp], None)
-                }
-                else {
-                    (vec![StateChange::NoOp], None)
-                }
-            }
-        }
-    }
+}
 
-    fn keep_hand(&mut self, state: &mut PSO3State, pid: PlayerId) -> (Vec<StateChange>, Option<Box<Phase>>) {
-        match pid {
-            PlayerId::One => {
-                if self.p1done == false {
-                    self.p1done = true;
-                    // TODO: keep hand
-                    (vec![StateChange::NoOp], None)
-                }
-                else {
-                    (vec![StateChange::NoOp], None)
-                }
-            }
-            PlayerId::Two => {
-                if self.p2done == false {
-                    self.p2done = true;
-                    // TODO: keep hand
-                    (vec![StateChange::NoOp], None)
-                }
-                else {
-                    (vec![StateChange::NoOp], None)
-                }
-            }
+fn discard_hand(done: &mut bool, player: &mut Player) -> Vec<StateChange> {
+    if *done == false {
+        *done = true;
+        
+        let mut actions = Vec::new();
+        for c in &player.hand {
+            actions.push(StateChange::DiscardCard {
+                player: player.id,
+                card: c.id(),
+            });
+            player.deck.discard(c.card.clone());
         }
+        player.hand = Vec::new();
+        let card = player.deck.draw();
+        let cardinst = CardInstance::new(card);
+        actions.push(StateChange::DrawCard {
+            player: player.id,
+            card: cardinst.clone(),
+        });
+        player.hand.push(cardinst);
+
+
+        actions
+    }
+    else {
+        Vec::new()
     }
 }
+
+fn keep_hand(done: &mut bool) -> Vec<StateChange> {
+    if *done == false {
+        *done = true;
+    }
+    Vec::new()
+}
+
+fn handle_player_action(action: PlayerAction, player: &mut Player, done: &mut bool)
+                        -> Result<Vec<StateChange>, SimulationError> {
+    match action {
+        PlayerAction::DiscardHand => {
+            Ok(discard_hand(done, player))
+        }
+        PlayerAction::KeepHand => {
+            Ok(keep_hand(done))
+        }
+        _ => Err(SimulationError::InvalidAction(PhaseType::PreGameDiscard, action))
+    }
+}
+
 
 
 
@@ -89,13 +90,14 @@ impl PreGameDiscard {
 impl Phase for PreGameDiscard {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
                      -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
-
-
-        match action {
-            Action::DiscardHand(pid) => Ok(self.discard_hand(state, pid)),
-            Action::KeepHand(pid) => Ok(self.keep_hand(state, pid)),
-            _ => Err(SimulationError::InvalidAction(PhaseType::PreGameDiscard, action))
-        }
+        let actions = match action {
+            Action::Player1(act) => handle_player_action(act, &mut state.player1, &mut self.p1done)?,
+            Action::Player2(act) => handle_player_action(act, &mut state.player2, &mut self.p2done)?,
+            
+            //Action::DiscardHand(pid) => Ok(self.discard_hand(state, pid)),
+            //Action::KeepHand(pid) => Ok(self.keep_hand(state, pid)),
+        };
+        Ok((actions, self.next_phase()))
     }
 
     fn phase_type(&self) -> PhaseType {
