@@ -1,10 +1,10 @@
 
 
-use card::Card;
+use card::CardInstance;
 use deck::Deck;
 
 
-#[derive(Debug, Copy, Clone)]
+#[derive(Debug, Copy, Clone, PartialEq)]
 pub enum PlayerId {
     One,
     Two,
@@ -14,8 +14,11 @@ pub enum PlayerId {
 
 #[derive(Debug)]
 pub struct Player {
-    pub hand: Vec<Card>,
+    pub id: PlayerId,
+    pub hand: Vec<CardInstance>,
     pub deck: Deck,
+    pub atk: u8,
+    pub def: u8,
     experience: usize,
 }
 
@@ -25,10 +28,13 @@ pub struct Player {
 
 
 impl Player {
-    pub fn new(deck: Deck) -> Player {
+    pub fn new(id: PlayerId, deck: Deck) -> Player {
         Player {
+            id: id,
             hand: Vec::new(),
             deck: deck,
+            atk: 0,
+            def: 0,
             experience: 0,
         }
     }
