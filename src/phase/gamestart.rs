@@ -46,27 +46,20 @@ fn post_roll(gamestart: &GameStart, state: &mut PSO3State) -> (Vec<StateChange>,
 
         state.active_player = Some(active_player);
 
-        state.player1.deck.shuffle(&mut state.rng);
-        state.player2.deck.shuffle(&mut state.rng);
-        
         let mut actions = Vec::new();
         
         for _ in 0..5 {
-            let p1card = state.player1.deck.draw();
-            let p1cardinst = CardInstance::new(p1card);
+            let p1cardinst = state.player1.draw();
             actions.push(StateChange::DrawCard {
                 player: PlayerId::One,
-                card: p1cardinst.clone(),
+                card: p1cardinst,
             });
-            state.player1.hand.push(p1cardinst);
 
-            let p2card = state.player2.deck.draw();
-            let p2cardinst = CardInstance::new(p2card);
+            let p2cardinst = state.player2.draw();
             actions.push(StateChange::DrawCard {
                 player: PlayerId::Two,
-                card: p2cardinst.clone(),
+                card: p2cardinst,
             });
-            state.player2.hand.push(p2cardinst);
         }
 
         actions.push(StateChange::TurnOrderRolls {

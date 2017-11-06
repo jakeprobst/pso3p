@@ -38,4 +38,10 @@ impl Player {
             experience: 0,
         }
     }
+
+    pub fn draw(&mut self) -> CardInstance {
+        let cardinst = CardInstance::new(self.deck.draw());
+        self.hand.push(cardinst.clone());
+        cardinst
+    }
 }
