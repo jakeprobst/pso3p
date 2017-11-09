@@ -22,9 +22,8 @@ pub mod statechange;
 pub mod cardlibrary;
 
 use action::{Action, PlayerAction};
-//use player::Player;
 use pso3simulation::PSO3Simulation;
-use deck::{Deck, DeckBuilder, DeckType};
+use deck::{DeckBuilder, DeckType};
 use field::Field;
 use cardlibrary::CardLibrary;
 use fieldobject::Position;
@@ -252,87 +251,3 @@ fn convert_cards() {
 }
 
 
-
-fn mainzzz() {
-    //println!("Hello, world!");
-
-
-
-    //let player1 = Player::new();
-    //let player2 = Player::new();
-
-    
-
-    //convert_cards();
-
-
-    //println!("-----------");
-    let card_library = CardLibrary::new();
-
-
-    //let deck1 = Deck::new(DeckType::Hunter);
-    //let deck2 = Deck::new(DeckType::Arkz);
-
-    println!("{:?}", card_library.get_by_id(1).unwrap());
-
-
-    let mut db = DeckBuilder::new()
-        .faction(DeckType::Hunter)
-        .character(card_library.get_by_id(1).unwrap());
-    
-    for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 253, 246] {
-        for _ in 0..3 {
-            db = db.card(card_library.get_by_id(c).unwrap());
-        }
-    }
-    let deck1 = db.deck().unwrap();
-
-
-    let mut db = DeckBuilder::new()
-        .faction(DeckType::Hunter)
-        .character(card_library.get_by_id(2).unwrap());
-    
-    for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 253, 246] {
-        for _ in 0..3 {
-            db = db.card(card_library.get_by_id(c).unwrap());
-        }
-    }
-    let deck2 = db.deck().unwrap();    
-    
-    let mut sim = PSO3Simulation::new(Field::new(), deck1, deck2);
-    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::RollForFirst)));
-    println!("{:#?}", sim.apply_action(Action::Player2(PlayerAction::RollForFirst)));
-    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::KeepHand)));
-    println!("{:#?}", sim.apply_action(Action::Player2(PlayerAction::DiscardHand)));
-    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::RollDice)));
-    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::SetCard(2, Position::new(0, 0)))));
-
-    /*let a = Card::Character(CharacterCard {
-        num:  1,
-        name: "Orland".to_string(),
-        ctype: CharacterType::Hunter,
-        class: CharacterClass::HUmar,
-        hp: 0,
-        ap: 1,
-        tp: 0,
-        mv: 3,
-        target: TargetType::Single,
-        range: Range::new(),
-        toplink: vec![ActionLink::Red],
-        rightlink: vec![ActionLink::Red, ActionLink::Blue, ActionLink::Yellow, ActionLink::Orange, ActionLink::Purple],
-        ability: vec![],
-    });
-
-
-    if let Ok(z) = serde_yaml::to_string(&a) {
-        println!("[{}]", z);
-    }*/
-
-
-
-
-
-    
-        
-    
-}

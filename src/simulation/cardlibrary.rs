@@ -16,9 +16,10 @@ pub struct CardLibrary {
 
 
 impl CardLibrary {
-    pub fn new() -> CardLibrary {
+    pub fn new(path: &str) -> CardLibrary {
         let mut cards = Vec::new();
-        let cardfiles = fs::read_dir("./resources/cards/").unwrap();
+        //let cardfiles = fs::read_dir("./resources/cards/").unwrap();
+        let cardfiles = fs::read_dir(path).unwrap();
         for card in cardfiles {
             let ucard = card.unwrap();
             let mut cfile = fs::File::open(ucard.path()).unwrap();
