@@ -1,6 +1,6 @@
 
 
-use card::CardInstance;
+use card::{CardInstance, CardId};
 use deck::Deck;
 
 
@@ -43,5 +43,20 @@ impl Player {
         let cardinst = CardInstance::new(self.deck.draw());
         self.hand.push(cardinst.clone());
         cardinst
+    }
+
+    pub fn hand_card_by_id(&mut self, card_id: CardId) -> Option<CardInstance> {
+        let fcard = self.hand.iter().find(|c| c.id() == card_id);
+        if let Some(card) = fcard {
+            Some(card.clone())
+        }
+        else {
+            None
+        }
+    }
+
+    pub fn hand_discard_card(&mut self, card: CardInstance) {
+        self.hand.retain(|c| c.id() != card.id());
+        self.deck.discard(card.card);
     }
 }

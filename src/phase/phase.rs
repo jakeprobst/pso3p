@@ -22,15 +22,10 @@ pub enum PhaseType {
 //pub struct PhaseType<'a>(&'a str);
 
 
-pub fn is_active_player(action: &Action, playerid: &Option<PlayerId>) -> bool {
-    if let Some(pid) = *playerid {
-        match *action {
-            Action::Player1(_) => PlayerId::One == pid,
-            Action::Player2(_) => PlayerId::Two == pid,
-        }
-    }
-    else {
-        return false;
+pub fn is_active_player(action: &Action, playerid: PlayerId) -> bool {
+    match *action {
+        Action::Player1(_) => PlayerId::One == playerid,
+        Action::Player2(_) => PlayerId::Two == playerid,
     }
 }
 

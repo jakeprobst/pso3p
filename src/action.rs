@@ -3,7 +3,7 @@
 
 
 use card::CardId;
-
+use fieldobject::Position;
 
 
 
@@ -13,8 +13,8 @@ pub enum PlayerAction {
     DiscardHand,
     KeepHand,
     RollDice,
-    SetCard(CardId),
-
+    SetCard(CardId, Position),
+    
     
     Discard(CardId),
     EndDiscard,

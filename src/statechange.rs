@@ -1,7 +1,7 @@
 use player::PlayerId;
 use phase::phase::PhaseType;
 use card::{CardInstance, CardId};
-
+use fieldobject::{FieldObjectInstance, Position};
 
 #[derive(Debug)]
 pub enum StateChange {
@@ -23,6 +23,12 @@ pub enum StateChange {
     DrawCard {
         player: PlayerId,
         card: CardInstance,
+    },
+
+    SetCard {
+        player: PlayerId,
+        card: FieldObjectInstance,
+        pos: Position,
     },
 
     /*DiscardHand {

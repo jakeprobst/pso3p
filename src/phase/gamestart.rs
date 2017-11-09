@@ -44,7 +44,7 @@ fn post_roll(gamestart: &GameStart, state: &mut PSO3State) -> (Vec<StateChange>,
             PlayerId::Two
         };
 
-        state.active_player = Some(active_player);
+        state.active_player = active_player;
 
         let mut actions = Vec::new();
         

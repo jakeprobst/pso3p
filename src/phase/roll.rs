@@ -48,7 +48,7 @@ fn handle_player_action(action: PlayerAction, rng: &mut StdRng, player: &mut Pla
 impl Phase for Roll {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
                      -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
-        if !is_active_player(&action, &state.active_player) {
+        if !is_active_player(&action, state.active_player) {
             return Err(SimulationError::NotYourTurn);
         }
         match action {
@@ -60,7 +60,6 @@ impl Phase for Roll {
     fn phase_type(&self) -> PhaseType {
         PhaseType::Roll
     }
-    
 }
 
 

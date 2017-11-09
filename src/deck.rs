@@ -69,8 +69,8 @@ impl DeckBuilder {
 
 #[derive(Debug)]
 pub struct Deck {
-    story_character: Card,
-    dtype: DeckType,
+    pub story_character: Card,
+    pub dtype: DeckType,
     cards: Vec<Card>,
 }
 

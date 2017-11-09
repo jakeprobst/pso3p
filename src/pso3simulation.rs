@@ -18,8 +18,8 @@ use rand::{StdRng, SeedableRng};
 #[derive(Debug)]
 pub struct PSO3State {
     pub rng: StdRng,
-    boardstate: BoardState,
-    pub active_player: Option<PlayerId>,
+    pub boardstate: BoardState,
+    pub active_player: PlayerId,
     pub player1: Player,
     pub player2: Player,
 }
@@ -40,14 +40,17 @@ pub struct PSO3Simulation {
 
 
 impl PSO3Simulation {
-    pub fn new(field: Field, p1deck: Deck, p2deck: Deck) -> PSO3Simulation {
+    pub fn new(field: Field, mut p1deck: Deck, mut p2deck: Deck) -> PSO3Simulation {
+        let mut rng =  StdRng::from_seed(&[1,2,3,4]);
+        //let mut rng = StdRng::new().unwrap();
+        p1deck.shuffle(&mut rng);
+        p2deck.shuffle(&mut rng);
         PSO3Simulation {
             phase: Box::new(GameStart::new()),
             state: PSO3State {
-                //rng: StdRng::from_seed(&[1,2,3,4]),
-                rng: StdRng::new().unwrap(),
-                boardstate: BoardState::new(),
-                active_player: None,
+                rng: rng,
+                boardstate: BoardState::new(field, &p1deck.story_character, &p2deck.story_character),
+                active_player: PlayerId::One,
                 player1: Player::new(PlayerId::One, p1deck),
                 player2: Player::new(PlayerId::Two, p2deck),
             }
@@ -55,21 +58,11 @@ impl PSO3Simulation {
     }
 
     pub fn apply_action(&mut self, action: Action) -> Result<Vec<StateChange>, SimulationError> {
-        //self.phase.action
-        /*let (phase, statechange) = match self.phase {
-            Phase::GameStart => phase::gamestart::game_start(self, action)?,
-
-
-            _ => panic!("unknown phase!")
-        };*/
-        //let (phase, statechange) =
         let (mut statechange, newphase) = self.phase.handle_action(&mut self.state, action)?;
         if let Some(phase) = newphase {
             self.phase = phase;
             statechange.push(StateChange::PhaseChange(self.phase.phase_type()))
         }
-        //Ok(statechange)
         Ok(statechange)
     }
-    
 }

@@ -47,11 +47,13 @@ fn discard_hand(done: &mut bool, player: &mut Player) -> Vec<StateChange> {
             player.deck.discard(c.card.clone());
         }
         player.hand = Vec::new();
-        let cardinst = player.draw();
-        actions.push(StateChange::DrawCard {
-            player: player.id,
-            card: cardinst.clone(),
-        });
+        for _ in 0..5 {
+            let cardinst = player.draw();
+            actions.push(StateChange::DrawCard {
+                player: player.id,
+                card: cardinst,
+            });
+        }
 
         actions
     }

@@ -27,6 +27,7 @@ use pso3simulation::PSO3Simulation;
 use deck::{Deck, DeckBuilder, DeckType};
 use field::Field;
 use cardlibrary::CardLibrary;
+use fieldobject::Position;
 
 
 use card::*;
@@ -301,6 +302,10 @@ fn main() {
     let mut sim = PSO3Simulation::new(Field::new(), deck1, deck2);
     println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::RollForFirst)));
     println!("{:#?}", sim.apply_action(Action::Player2(PlayerAction::RollForFirst)));
+    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::KeepHand)));
+    println!("{:#?}", sim.apply_action(Action::Player2(PlayerAction::DiscardHand)));
+    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::RollDice)));
+    println!("{:#?}", sim.apply_action(Action::Player1(PlayerAction::SetCard(2, Position::new(0, 0)))));
 
     /*let a = Card::Character(CharacterCard {
         num:  1,
