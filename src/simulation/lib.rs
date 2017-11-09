@@ -8,18 +8,18 @@ extern crate serde_yaml;
 extern crate rand;
 
 
-mod action;
-mod boardstate;
-mod card;
-mod deck;
-mod player;
-mod phase;
-mod pso3simulation;
-mod field;
-mod fieldobject;
-mod error;
-mod statechange;
-mod cardlibrary;
+pub mod action;
+pub mod boardstate;
+pub mod card;
+pub mod deck;
+pub mod player;
+pub mod phase;
+pub mod pso3simulation;
+pub mod field;
+pub mod fieldobject;
+pub mod error;
+pub mod statechange;
+pub mod cardlibrary;
 
 use action::{Action, PlayerAction};
 //use player::Player;
@@ -253,7 +253,7 @@ fn convert_cards() {
 
 
 
-fn main() {
+fn mainzzz() {
     //println!("Hello, world!");
 
 

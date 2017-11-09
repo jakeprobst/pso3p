@@ -9,3 +9,11 @@ serde_derive = "1.0"
 serde_yaml= "0.7"
 serde_json = "1.0"
 rand = "0.3"
+
+[lib]
+name = "pso3p"
+path = "src/simulation/lib.rs"
+
+[[bin]]
+name = "pso3p-serv"
+path = "src/web/main.rs"
