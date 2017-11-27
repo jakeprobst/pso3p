@@ -6,7 +6,7 @@ use statechange::StateChange;
 use error::SimulationError;
 use player::PlayerId;
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum PhaseType {
     GameStart,
     PreGameDiscard,
@@ -32,7 +32,7 @@ pub fn is_active_player(action: &Action, playerid: PlayerId) -> bool {
 
 pub trait Phase {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
-                     -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError>;
+                     -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError>;
     fn phase_type(&self) -> PhaseType;
 }
 

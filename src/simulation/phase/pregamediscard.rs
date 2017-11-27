@@ -23,7 +23,7 @@ impl PreGameDiscard {
         }
     }
 
-    fn next_phase(&self) -> Option<Box<Phase>> {
+    fn next_phase(&self) -> Option<Box<Phase + Send>> {
         if self.p1done && self.p2done {
             Some(Box::new(Roll::new()))
         }
@@ -88,7 +88,7 @@ fn handle_player_action(action: PlayerAction, player: &mut Player, done: &mut bo
 
 impl Phase for PreGameDiscard {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
-                     -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
+                     -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError> {
         let actions = match action {
             Action::Player1(act) => handle_player_action(act, &mut state.player1, &mut self.p1done)?,
             Action::Player2(act) => handle_player_action(act, &mut state.player2, &mut self.p2done)?,

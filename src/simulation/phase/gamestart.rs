@@ -35,7 +35,7 @@ fn roll_for_first(proll: &mut Option<u8>, state: &mut PSO3State) {
 }
 
 
-fn post_roll(gamestart: &GameStart, state: &mut PSO3State) -> (Vec<StateChange>, Option<Box<Phase>>) {
+fn post_roll(gamestart: &GameStart, state: &mut PSO3State) -> (Vec<StateChange>, Option<Box<Phase + Send>>) {
     if let (Some(p1roll), Some(p2roll)) = (gamestart.p1roll, gamestart.p2roll) {
         let active_player = if p1roll > p2roll {
             PlayerId::One
@@ -91,7 +91,7 @@ fn handle_player_action(action: PlayerAction, proll: &mut Option<u8>, state: &mu
 
 impl Phase for GameStart {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
-                     -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
+                     -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError> {
         match action {
             Action::Player1(act) => {
                 handle_player_action(act, &mut self.p1roll, state)?;

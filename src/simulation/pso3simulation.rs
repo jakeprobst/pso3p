@@ -31,8 +31,8 @@ pub struct PSO3State {
 
 
 pub struct PSO3Simulation {
-    phase: Box<Phase>,
-    state: PSO3State,
+    phase: Box<Phase + Send>,
+    pub state: PSO3State,
 }
 
 

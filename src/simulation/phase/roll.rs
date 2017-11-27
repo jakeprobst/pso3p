@@ -20,7 +20,7 @@ impl Roll {
 }
 
 // TODO: actual random
-fn roll_dice(id: PlayerId, rng: &mut StdRng, atk: &mut u8, def: &mut u8) -> (Vec<StateChange>, Option<Box<Phase>>) {
+fn roll_dice(id: PlayerId, rng: &mut StdRng, atk: &mut u8, def: &mut u8) -> (Vec<StateChange>, Option<Box<Phase + Send>>) {
     let d1 = rng.gen_range(1, 7);
     let d2 = rng.gen_range(1, 7);
 
@@ -38,7 +38,7 @@ fn roll_dice(id: PlayerId, rng: &mut StdRng, atk: &mut u8, def: &mut u8) -> (Vec
 }
 
 fn handle_player_action(action: PlayerAction, rng: &mut StdRng, player: &mut Player)
-                        -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
+                        -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError> {
     match action {
         PlayerAction::RollDice => Ok(roll_dice(player.id, rng, &mut player.atk, &mut player.def)),
         _ => Err(SimulationError::InvalidAction(PhaseType::Roll, action))
@@ -47,7 +47,7 @@ fn handle_player_action(action: PlayerAction, rng: &mut StdRng, player: &mut Pla
 
 impl Phase for Roll {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
-                     -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
+                     -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError> {
         if !is_active_player(&action, state.active_player) {
             return Err(SimulationError::NotYourTurn);
         }

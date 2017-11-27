@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+div#leftside {
+    float: left;
+}
+
+div#rightside {
+    float: left;
+    border: solid 5px red;
+    padding: 60px;
+}
+
+div#cardfull {
+    margin: 200px 20px 20px 40px;
+    position:relative;
+    width: 300px;
+    height: 500px;
+    border: dashed 2px green;
+    float: left;
+}
+
+div#actionlog {
+    margin: 30px;
+    float: left;
+    width: 500px;
+    height: 1000px;
+    border: dashed 2px blue;
+    overflow-y: scroll;
+    overflow-x: hide;
+}
+
+.boardsquare {
+    border: solid 1px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /*display: inline-block;*/
+}
+
+
+div#playingfield {
+}
+
+div#board {
+}
+
+div#boardrow {
+}
+
+div#statusbar {
+    border: solid;
+}
+
+span#player {
+    width: 25%;
+    font-size: 26px;
+    display: inline-block;
+}
+
+span#phase {
+    width: 25%;
+    font-size: 26px;
+    display: inline-block;
+}
+
+span#atkroll {
+    width: 25%;
+    font-size: 26px;
+    display: inline-block;
+}
+
+span#defroll {
+    width: 25%;
+    font-size: 26px;
+    display: inline-block;
+}
+
+div#hand {
+    padding: 50px;
+}
+
+div.cardthumb {
+    margin: 10px;
+    border: solid 1px green;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}

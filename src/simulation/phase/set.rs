@@ -61,7 +61,7 @@ fn handle_player_action(action: PlayerAction, board: &mut PlayerBoardState, play
 
 impl Phase for Set {
     fn handle_action(&mut self, state: &mut PSO3State, action: Action)
-                     -> Result<(Vec<StateChange>, Option<Box<Phase>>), SimulationError> {
+                     -> Result<(Vec<StateChange>, Option<Box<Phase + Send>>), SimulationError> {
         let actions = match action {
             Action::Player1(act) => handle_player_action(act, &mut state.boardstate.player1, &mut state.player1)?,
             Action::Player2(act) => handle_player_action(act, &mut state.boardstate.player2, &mut state.player2)?,

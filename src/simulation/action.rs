@@ -7,7 +7,7 @@ use fieldobject::Position;
 
 
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 pub enum PlayerAction {
     RollForFirst,
     DiscardHand,
