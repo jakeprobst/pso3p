@@ -12,6 +12,7 @@ use pso3simulation::PSO3State;
 use card::{Card, CardId};
 use fieldobject::{Position, FieldObjectInstance};
 
+#[derive(Debug)]
 pub struct Set;
 
 
@@ -22,7 +23,7 @@ impl Set {
     }
 }
 
-
+/*
 fn set_card(card_id: CardId, pos: Position, state: &mut PlayerBoardState, player: &mut Player)
             -> Result<Vec<StateChange>, SimulationError> {
 
@@ -55,7 +56,7 @@ fn handle_player_action(action: PlayerAction, board: &mut PlayerBoardState, play
                         -> Result<Vec<StateChange>, SimulationError> {
     match action {
         PlayerAction::SetCard(cardid, pos) => set_card(cardid, pos, board, player),
-        _ => Err(SimulationError::InvalidAction(PhaseType::Roll, action))
+        _ => Err(SimulationError::InvalidAction(PhaseType::Set, action))
     }
 }
 
@@ -75,3 +76,5 @@ impl Phase for Set {
     }
     
 }
+
+*/

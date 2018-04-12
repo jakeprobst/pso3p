@@ -4,7 +4,7 @@ use card::{CardInstance, CardId};
 use deck::Deck;
 
 
-#[derive(Debug, Copy, Clone, PartialEq, Serialize, Deserialize)]
+#[derive(Debug, Copy, Clone, Hash, Eq, PartialEq, Serialize, Deserialize)]
 pub enum PlayerId {
     #[serde(rename="1")]
     One,

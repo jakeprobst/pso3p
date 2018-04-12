@@ -56,7 +56,7 @@ pub struct OldCard {
     restrict: Vec<String>,
 }
 
-
+/*
 fn fix_target(s: &String) -> &'static str {
     match s.as_ref() {
         "single" => "Single",
@@ -249,5 +249,5 @@ fn convert_cards() {
     }
 
 }
-
+*/
 

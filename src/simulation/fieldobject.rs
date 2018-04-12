@@ -8,7 +8,7 @@ use card::{Card, CharacterType};
 
 pub type ObjectId = u64;
 
-#[derive(Debug, Copy, Clone, Serialize, Deserialize)]
+#[derive(Debug, Copy, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Position {
     pub x: u8,
     pub y: u8,
@@ -23,7 +23,7 @@ impl Position {
     }
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq)]
 pub enum FieldObjectType {
     CharacterHunter,
     CharacterArkz,
@@ -32,7 +32,7 @@ pub enum FieldObjectType {
 }
 
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct FieldObjectInstance {
     pub id: ObjectId,
     #[serde(rename = "type")]

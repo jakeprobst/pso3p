@@ -2,7 +2,7 @@
 use player::{PlayerId, Player};
 use pso3simulation::PSO3State;
 use action::{PlayerAction, Action};
-use phase::phase::{Phase, PhaseType, is_active_player};
+use phase::phase::{Phase, PhaseType};
 use error::SimulationError;
 use statechange::{StateChange};
 use phase::set::Set;
@@ -17,8 +17,31 @@ impl Roll {
         Roll {
         }
     }
+
+
+    pub fn roll_atk_def(&self, state: &mut PSO3State) -> StateChange {
+        let atk = state.rng.gen_range(1, 7);
+        let def = state.rng.gen_range(1, 7);
+
+        {
+            let player = state.get_active_player();
+            player.atk = atk;
+            player.def = def;
+        }
+            
+        StateChange::AtkDefDiceRoll {
+            player: state.active_player,
+            atk: atk,
+            def: def,
+        }
+    }
 }
 
+
+
+
+
+/*
 // TODO: actual random
 fn roll_dice(id: PlayerId, rng: &mut StdRng, atk: &mut u8, def: &mut u8) -> (Vec<StateChange>, Option<Box<Phase + Send>>) {
     let d1 = rng.gen_range(1, 7);
@@ -64,3 +87,4 @@ impl Phase for Roll {
 
 
 
+*/

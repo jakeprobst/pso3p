@@ -1,7 +1,7 @@
-#![feature(plugin)]
-#![plugin(rocket_codegen)]
+/*#![feature(plugin)]
+//#![plugin(rocket_codegen)]
 
-extern crate rocket;
+//extern crate rocket;
 //extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
@@ -45,6 +45,8 @@ use pso3p::field::Field;
 use pso3p::cardlibrary::CardLibrary;
 use pso3p::fieldobject::Position;
 use pso3p::statechange::StateChange;
+use pso3p::phase::phase::PhaseType;
+use pso3p::error::SimulationError;
 
 
 
@@ -73,7 +75,7 @@ impl Match {
             .faction(DeckType::Hunter)
             .character(card_library.get_by_id(1).unwrap());
         
-        for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 253, 246] {
+        for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 246, 564] {
             for _ in 0..3 {
                 db = db.card(card_library.get_by_id(c).unwrap());
             }
@@ -84,14 +86,15 @@ impl Match {
             .faction(DeckType::Hunter)
             .character(card_library.get_by_id(2).unwrap());
         
-        for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 253, 246] {
+        for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 246, 564] {
             for _ in 0..3 {
                 db = db.card(card_library.get_by_id(c).unwrap());
             }
         }
         let deck2 = db.deck().unwrap();    
         
-        let sim = PSO3Simulation::new(Field::new(), deck1, deck2);
+        let rng = StdRng::from_seed(&[1,2,3,4]);
+        let sim = PSO3Simulation::new(rng, Field::new(), deck1, deck2);
         
         Match {
             sim: sim,
@@ -276,7 +279,7 @@ fn main() {
                 }
             }
 
-            let match_ = Match::new();
+            let mut match_ = Match::new();
 
             /*match_c1_tx.unbounded_send(OwnedMessage::Text(serde_json::to_string(&StateChange::SetPlayer {
                 player: PlayerId::One,
@@ -285,20 +288,24 @@ fn main() {
                 player: PlayerId::Two,
         }).unwrap())).unwrap();*/
 
-            match_c1_tx.unbounded_send(StateChange::SetPlayer {
-                player: PlayerId::One,
+            match_c1_tx.unbounded_send(StateChange::SetPlayer(PlayerId::One)).unwrap();
+            match_c2_tx.unbounded_send(StateChange::SetPlayer(PlayerId::Two)).unwrap();
+            /*    player: PlayerId::One,
             }).unwrap();
             match_c2_tx.unbounded_send(StateChange::SetPlayer {
                 player: PlayerId::Two,
-            }).unwrap();
+            }).unwrap();*/
             
             let mut actions = Vec::new();
-            actions.push(StateChange::SetCharacter {
-                card: match_.sim.state.boardstate.player1.character
+            /*actions.push(StateChange::SetCharacter {
+                object: match_.sim.state.boardstate.player1.character
             });
             actions.push(StateChange::SetCharacter {
-                card: match_.sim.state.boardstate.player2.character
-            });
+                object: match_.sim.state.boardstate.player2.character
+            });*/
+            actions.push(StateChange::SetCharacter(match_.sim.state.boardstate.player1.character.clone()));
+            actions.push(StateChange::SetCharacter(match_.sim.state.boardstate.player2.character.clone()));
+            actions.push(StateChange::PhaseChange(PhaseType::GameStart));
 
             for a in actions {
                 match_c1_tx.unbounded_send(a.clone()).unwrap();
@@ -307,7 +314,10 @@ fn main() {
                 //match_c2_tx.unbounded_send(OwnedMessage::Text(serde_json::to_string(&a).unwrap())).unwrap();
             }
 
+            //println!("roll: {}", serde_json::to_string(&PlayerAction::RollForFirst).unwrap());
             
+            //match_.sim.apply_action(Action::Player1(PlayerAction::RollForFirst));
+            //match_.sim.apply_action(Action::Player2(PlayerAction::RollForFirst));
 
             // send clients all the pregame stuff
             //match_c1_tx.unbounded_send(OwnedMessage::Text()).unwrap();
@@ -315,23 +325,29 @@ fn main() {
             //let match_handler = c1_match_rx.select(c2_match_rx)
             let match_handler = c1_match_rx.merge(c2_match_rx)
                 .for_each(move |item| {
-                    /*match item {
+                    match item {
                         MergedItem::First(m) => {
-                            if let OwnedMessage::Close(_) = m {
-                                //match_c2_tx.unbounded_send(OwnedMessage::Text("opponent left".to_string())).unwrap();
+                            /*if let OwnedMessage::Close(_) = m {
+                                match_c2_tx.unbounded_send(StateChange::DebugMsg("opponent left".to_string())).unwrap();
                                 return Err(());
-                            }
-                            match_c2_tx.unbounded_send(m).unwrap();
+                            }*/
+                            //match_c2_tx.unbounded_send(m).unwrap();
+                            actually_play_the_game(&mut match_, &match_c1_tx, &match_c2_tx, PlayerId::One, m);
                         },
                         MergedItem::Second(m) => {
-                            if let OwnedMessage::Close(_) = m {
+                            /*if let OwnedMessage::Close(_) = m {
+                                match_c1_tx.unbounded_send(StateChange::DebugMsg("opponent left".to_string())).unwrap();
                                 //match_c1_tx.unbounded_send(OwnedMessage::Text("opponent left".to_string())).unwrap();
                                 return Err(());
-                            }
-                            match_c1_tx.unbounded_send(m).unwrap();
+                            }*/
+                            actually_play_the_game(&mut match_, &match_c2_tx, &match_c1_tx, PlayerId::Two, m);
+                            //match_c1_tx.unbounded_send(m).unwrap();
                         },
-                        _ => panic!("not sure if this will ever be hit")
-                    }*/
+                        MergedItem::Both(m1, m2) => {
+                            actually_play_the_game(&mut match_, &match_c1_tx, &match_c2_tx, PlayerId::One, m1);
+                            actually_play_the_game(&mut match_, &match_c2_tx, &match_c1_tx, PlayerId::Two, m2);
+                        }
+                    }
              
                     Ok(())
                 })
@@ -355,7 +371,131 @@ fn main() {
 
 
 
+fn actually_play_the_game(match_: &mut Match,
+                          active_player: &mpsc::UnboundedSender<StateChange>, other_player: &mpsc::UnboundedSender<StateChange>,
+                          player: PlayerId, msg: OwnedMessage) {
+    match msg {
+        OwnedMessage::Close(_) => {
+            other_player.unbounded_send(StateChange::DebugMsg("opponent left".to_string())).unwrap();
+        },
+        OwnedMessage::Text(txt) => {
+            println!("recv {:?}: {}", player, txt);
+            let action = serde_json::from_str::<PlayerAction>(&txt).unwrap();
+
+            let paction = match player {
+                PlayerId::One => Action::Player1(action),
+                PlayerId::Two => Action::Player2(action),
+            };
+           
+            let changes = match match_.sim.apply_action(paction) {
+                Ok(c) => c,
+                Err(err) => {
+                    match err {
+                        SimulationError::InvalidAction(phase, action) => {
+                            println!("invalid action: {:?}: [{:?}] {:#?}", player, phase, action);
+                        },
+                        _ => ()
+                    }
+                    Vec::new()
+                }
+            };
+            println!("changes: {:?}", changes);
+
+            for c in changes {
+                // only want this going to the player who owns it
+                /*if let StateChange::DrawCard{player: pid, ..} = c.clone() {
+                    if pid == player {
+                        active_player.unbounded_send(c).unwrap();
+                    }
+                }
+                else {
+                    active_player.unbounded_send(c.clone()).unwrap();
+                    other_player.unbounded_send(c).unwrap();
+            }*/
+                match c.clone() {
+                    StateChange::DrawCard{player: pid, ..} if pid == player => active_player.unbounded_send(c).unwrap(),
+                    StateChange::DiscardCard{player: pid, ..} if pid == player => active_player.unbounded_send(c).unwrap(),
+                    _ => {
+                        active_player.unbounded_send(c.clone()).unwrap();
+                        other_player.unbounded_send(c).unwrap();
+                    }
+                }
+            }
+            
+            
+        },
+        _ => panic!("dont know if this should ever be hit")
+    }
+
+
+    
+}
 
 
 
 
+ */
+
+extern crate pso3p;
+extern crate rand;
+
+use pso3p::pso3simulation::PSO3Simulation;
+use pso3p::deck::{DeckBuilder, DeckType};
+use pso3p::player::PlayerId;
+use pso3p::field::Field;
+use pso3p::cardlibrary::CardLibrary;
+use pso3p::fieldobject::Position;
+use pso3p::statechange::StateChange;
+use pso3p::phase::phase::PhaseType;
+use pso3p::error::SimulationError;
+use pso3p::action::Action;
+use pso3p::phase::{gamestart, pregamediscard};
+
+use rand::{StdRng, SeedableRng};
+
+fn do_action(sim: &mut PSO3Simulation, action: &Action) {
+    println!("{:?} -> {:?}", action, sim.apply_action(action));
+    println!("{:#?}", sim.phase);
+}
+
+fn main() {
+     let card_library = CardLibrary::new("./resources/cards/");
+
+    let mut db = DeckBuilder::new()
+        .faction(DeckType::Hunter)
+        .character(card_library.get_by_id(1).unwrap());
+
+    for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 246, 564] {
+        for _ in 0..3 {
+            db = db.card(card_library.get_by_id(c).unwrap());
+        }
+    }
+    let deck1 = db.deck().unwrap();
+
+    let mut db = DeckBuilder::new()
+        .faction(DeckType::Hunter)
+        .character(card_library.get_by_id(2).unwrap());
+
+    for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 246, 564] {
+        for _ in 0..3 {
+            db = db.card(card_library.get_by_id(c).unwrap());
+        }
+    }
+    let deck2 = db.deck().unwrap();
+
+    let rng = StdRng::from_seed(&[1, 2, 3, 4]);
+
+    let mut sim = PSO3Simulation::new(rng, Field::new(), deck1, deck2);
+   
+    //sim.apply_action(Action::Player1(PlayerAction::RollForFirst))
+    //sim.apply_action(gamestart::RollForFirst::new(PlayerId::Two));
+    do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::One));
+    do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::One));
+    do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::Two));
+    //do_action(&mut sim, &pregamediscard::FillHand::new(PlayerId::Two));
+    //do_action(&mut sim, &pregamediscard::FillHand::new(PlayerId::Two));
+    //do_action(&mut sim, &pregamediscard::FillHand::new(PlayerId::One));
+    do_action(&mut sim, &pregamediscard::KeepHand::new(PlayerId::One));
+    do_action(&mut sim, &pregamediscard::DiscardHand::new(PlayerId::One));
+    do_action(&mut sim, &pregamediscard::DiscardHand::new(PlayerId::Two));
+}

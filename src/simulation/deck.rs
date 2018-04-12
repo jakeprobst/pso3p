@@ -4,6 +4,7 @@
 
 use card::{Card, CharacterCard};
 use rand::Rng;
+use std::collections::VecDeque;
 
 
 
@@ -26,7 +27,7 @@ pub enum DeckError {
 pub struct DeckBuilder {
     dtype: Option<DeckType>,
     story_character: Option<Card>,
-    cards: Vec<Card>,
+    cards: VecDeque<Card>,
 }
 
 
@@ -35,7 +36,7 @@ impl DeckBuilder {
         DeckBuilder {
             dtype: None,
             story_character: None,
-            cards: Vec::new(),
+            cards: VecDeque::new(),
         }
     }
 
@@ -50,7 +51,7 @@ impl DeckBuilder {
     }
     
     pub fn card(mut self, card: Card) -> DeckBuilder {
-        self.cards.push(card);
+        self.cards.push_back(card);
         self
     }
 
@@ -71,7 +72,7 @@ impl DeckBuilder {
 pub struct Deck {
     pub story_character: Card,
     pub dtype: DeckType,
-    cards: Vec<Card>,
+    cards: VecDeque<Card>,
 }
 
 
@@ -80,14 +81,19 @@ pub struct Deck {
 
 impl Deck {
     pub fn shuffle<R: Rng>(&mut self, rng: &mut R)  {
-        rng.shuffle(self.cards.as_mut_slice());
+        // this is not defined for vecdeque
+        //rng.shuffle(self.cards.as_mut_slice());
+        for i in 0..self.cards.len()-1 {
+            let r = rng.gen_range(i, self.cards.len());
+            self.cards.swap(i, r);
+        }
     }
 
     pub fn draw(&mut self) -> Card {
-        self.cards.pop().unwrap()
+        self.cards.pop_front().unwrap()
     }
 
     pub fn discard(&mut self, card: Card) {
-        self.cards.push(card);
+        self.cards.push_back(card);
     }
 }

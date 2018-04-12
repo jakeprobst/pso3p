@@ -3,7 +3,15 @@ use phase::phase::PhaseType;
 use card::{CardInstance, CardId};
 use fieldobject::{FieldObjectInstance, Position};
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+
+
+/*pub enum StateChange {
+    Player1(StateChangeAction),
+    Player2(StateChangeAction),
+    Both(StateChangeAction),
+}*/
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub enum StateChange {
     NoOp,
     DebugMsg(String),
@@ -11,12 +19,8 @@ pub enum StateChange {
         width: u8,
         height: u8,
     },
-    SetPlayer {
-        player: PlayerId,
-    },
-    SetCharacter {
-        card: FieldObjectInstance,
-    },
+    SetPlayer(PlayerId),
+    SetCharacter(FieldObjectInstance),
     TurnOrderRolls {
         player1_roll: u8,
         player2_roll: u8,
