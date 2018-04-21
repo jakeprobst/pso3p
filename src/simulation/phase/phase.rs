@@ -20,6 +20,7 @@ pub enum PhaseType {
 //#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[derive(Debug)]
 pub enum Phase {
+    Init,
     GameStart(gamestart::GameStart),
     PreGameDiscard(pregamediscard::PreGameDiscard),
     Roll(roll::Roll),
@@ -43,33 +44,60 @@ pub enum Phase {
 
 //pub fn get_player_data()
 
+
+#[derive(Debug)]
+pub struct Start {
+}
+
+impl Action for Start {
+    fn apply(&self, phase: &mut Phase, state: &mut PSO3State) -> Vec<StateChange> {
+        Vec::new()
+    }
+
+    fn is_valid(&self, phase: &Phase, state: &PSO3State) -> bool {
+        true
+    }
+}
+
+
 impl Phase {
-    pub fn on_start(&mut self, state: &mut PSO3State) -> Vec<StateChange> {
+    fn pregamediscard_start(&self, pregamediscard: &mut pregamediscard::PreGameDiscard, state: &mut PSO3State) -> Vec<StateChange> {
         let mut actions = Vec::new();
+        actions.push(StateChange::PhaseChange(PhaseType::PreGameDiscard));
+        //for player in [state.get_player(PlayerId::One), state.get_player(PlayerId::Two)].iter_mut() {
+        for player in [&mut state.player1, &mut state.player2].iter_mut() {
+            for _ in 0..5 {
+                let cardinst = player.draw_card();
+                actions.push(StateChange::DrawCard {
+                    player: player.id,
+                    card: cardinst,
+                });
+            }
+            pregamediscard.player_hand_status(player.id, pregamediscard::HandStatus::Filled);
+        };
+        actions
+    }
+    
+    pub fn on_start(&mut self, state: &mut PSO3State) -> Vec<StateChange> {
         match self {
+            Phase::GameStart(gamestart) => {
+                //self.gamestart_start(state)
+                gamestart.on_start(state)
+            },
             Phase::PreGameDiscard(ref mut pregamediscard) => {
-                actions.push(StateChange::PhaseChange(PhaseType::PreGameDiscard));
-                //for player in [state.get_player(PlayerId::One), state.get_player(PlayerId::Two)].iter_mut() {
-                for player in [&mut state.player1, &mut state.player2].iter_mut() {
-                    for _ in 0..5 {
-                        let cardinst = player.draw();
-                        actions.push(StateChange::DrawCard {
-                            player: player.id,
-                            card: cardinst,
-                        });
-                    }
-                    pregamediscard.player_hand_status(player.id, pregamediscard::HandStatus::Filled);
-                };
+                self.pregamediscard_start(pregamediscard, state)
             },
             Phase::Roll(roll) => {
-                actions.push(roll.roll_atk_def(state));
-            }
-            _ => {}
+                vec![roll.roll_atk_def(state)]
+            },
+            _ => Vec::new()
         }
-        return actions
     }
     pub fn next_phase(&self) -> Option<Phase> {
         match self {
+            Phase::Init => {
+                return Some(Phase::GameStart(gamestart::GameStart::new()));
+            }
             Phase::GameStart(gamestart) => {
                 if gamestart.both_rolled() {
                     return Some(Phase::PreGameDiscard(pregamediscard::PreGameDiscard::new()));

@@ -541,14 +541,30 @@ pub enum Card {
     Boss(BossCard),
 }
 
-
-
-
-#[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
-pub struct CardInstance {
-    pub id: CardId,
-    pub card: Card,
+impl Card {
+    pub fn as_sc(&self) -> Option<CharacterCard> {
+        match self {
+            Card::Character(char) => Some(char.clone()),
+            _ => None
+        }
+    }
+    
+    pub fn as_item(&self) -> Option<ItemCard> {
+        match self {
+            Card::Item(item) => Some(item.clone()),
+            _ => None
+        }
+    }
 }
+
+/*impl From<Card> for Option<CharacterCard> {
+    fn from(card: Card) -> Option<CharacterCard> {
+        match card {
+            Card::Character(char) => Some(char),
+            _ => None
+        }
+    }
+}*/
 
 
 static CARD_ID: AtomicU64 =  ATOMIC_U64_INIT;
@@ -558,6 +574,12 @@ fn new_card_id() -> CardId {
 }
 
 
+
+#[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
+pub struct CardInstance {
+    pub id: CardId,
+    pub card: Card,
+}
 
 impl CardInstance {
     pub fn new(card: Card) -> CardInstance {
@@ -569,5 +591,18 @@ impl CardInstance {
 
     pub fn id(&self) -> CardId {
         self.id
+    }
+}
+
+impl PartialEq<CardId> for CardInstance {
+    fn eq(&self, other: &CardId) -> bool {
+        self.id == *other
+    }
+}
+
+
+impl PartialEq<CardInstance> for CardId {
+    fn eq(&self, other: &CardInstance) -> bool {
+        *self == other.id
     }
 }

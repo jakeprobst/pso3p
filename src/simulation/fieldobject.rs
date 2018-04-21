@@ -1,10 +1,11 @@
 
-
+use std;
 use std::sync::atomic::{AtomicU64, Ordering, ATOMIC_U64_INIT};
-
+use serde::ser::Serialize;
+use serde::de::Deserialize;
 
 use player::PlayerId;
-use card::{Card, CharacterType};
+use card::{Card, CharacterType, CharacterCard, ItemCard, MonsterCard};
 
 pub type ObjectId = u64;
 
@@ -31,8 +32,73 @@ pub enum FieldObjectType {
     Item,
 }
 
+static OBJECT_ID: AtomicU64 =  ATOMIC_U64_INIT;
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+fn new_object_id() -> ObjectId {
+    OBJECT_ID.fetch_add(1, Ordering::SeqCst)
+}
+
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct StoryCharacterFieldObject {
+    pub id: ObjectId,
+    pub player: PlayerId,
+    pub card: CharacterCard,
+    pub pos: Position,
+}
+
+impl StoryCharacterFieldObject {
+    pub fn new(player: PlayerId, card: &CharacterCard, pos: Position) -> StoryCharacterFieldObject {
+        StoryCharacterFieldObject {
+            id: new_object_id(),
+            player: player,
+            card: card.clone(),
+            pos: pos,
+        }
+    }
+}
+
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ItemFieldObject {
+    pub id: ObjectId,
+    pub player: PlayerId,
+    card: ItemCard,
+    char: ObjectId,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct MonsterFieldObject {
+    pub id: ObjectId,
+    pub player: PlayerId,
+    card: MonsterCard,
+    pos: Position,
+}
+
+
+/*pub enum FieldObject {
+    StoryCharacter(StoryCharacterFieldObject),
+    Item(ItemFieldObject),
+    Monster(MonsterFieldObject),
+}
+
+#[derive(Debug, Clone)]
+pub struct FieldObjectInstance {
+    pub id: ObjectId,
+    pub player: PlayerId,
+    pub obj: FieldObject,
+}
+
+impl FieldObjectInstance {
+    pub fn new_sc(player: PlayerId, card: &CharacterCard, pos: Position) -> FieldObjectInstance {
+        FieldObjectInstance {
+            id: new_object_id(),
+            obj: Box::new(FieldObject::StoryCharacter(StoryCharacterFieldObject::new(card, pos)))
+        }
+    }
+}*/
+
+/*#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct FieldObjectInstance {
     pub id: ObjectId,
     #[serde(rename = "type")]
@@ -46,11 +112,7 @@ pub struct FieldObjectInstance {
     //pub mv,
 }
 
-static OBJECT_ID: AtomicU64 =  ATOMIC_U64_INIT;
 
-fn new_object_id() -> ObjectId {
-    OBJECT_ID.fetch_add(1, Ordering::SeqCst)
-}
 
 impl FieldObjectInstance {
     pub fn new(player: PlayerId, card: &Card, pos: &Position) -> FieldObjectInstance {
@@ -78,4 +140,4 @@ impl FieldObjectInstance {
             pos: pos.clone(),
         }
     }
-}
+}*/

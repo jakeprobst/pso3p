@@ -1,7 +1,7 @@
 use player::PlayerId;
 use phase::phase::PhaseType;
 use card::{CardInstance, CardId};
-use fieldobject::{FieldObjectInstance, Position};
+use fieldobject::{StoryCharacterFieldObject, ItemFieldObject, MonsterFieldObject, Position};
 
 
 
@@ -11,7 +11,9 @@ use fieldobject::{FieldObjectInstance, Position};
     Both(StateChangeAction),
 }*/
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+//#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+//#[derive(Debug)]
 pub enum StateChange {
     NoOp,
     DebugMsg(String),
@@ -20,7 +22,7 @@ pub enum StateChange {
         height: u8,
     },
     SetPlayer(PlayerId),
-    SetCharacter(FieldObjectInstance),
+    SetCharacter(StoryCharacterFieldObject),
     TurnOrderRolls {
         player1_roll: u8,
         player2_roll: u8,
@@ -40,11 +42,9 @@ pub enum StateChange {
         card: CardInstance,
     },
 
-    SetCard {
-        player: PlayerId,
-        card: FieldObjectInstance,
-        pos: Position,
-    },
+    SetItemCard(ItemFieldObject),
+
+    SetMonsterCard(MonsterFieldObject),
 
     /*DiscardHand {
         player: PlayerId,

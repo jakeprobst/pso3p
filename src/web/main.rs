@@ -449,7 +449,7 @@ use pso3p::statechange::StateChange;
 use pso3p::phase::phase::PhaseType;
 use pso3p::error::SimulationError;
 use pso3p::action::Action;
-use pso3p::phase::{gamestart, pregamediscard};
+use pso3p::phase::{phase, gamestart, pregamediscard};
 
 use rand::{StdRng, SeedableRng};
 
@@ -463,7 +463,7 @@ fn main() {
 
     let mut db = DeckBuilder::new()
         .faction(DeckType::Hunter)
-        .character(card_library.get_by_id(1).unwrap());
+        .character(card_library.get_by_id(1).unwrap().as_sc().unwrap());
 
     for c in vec![9, 12, 22, 23, 40, 44, 371, 197, 246, 564] {
         for _ in 0..3 {
@@ -474,7 +474,7 @@ fn main() {
 
     let mut db = DeckBuilder::new()
         .faction(DeckType::Hunter)
-        .character(card_library.get_by_id(2).unwrap());
+        .character(card_library.get_by_id(2).unwrap().as_sc().unwrap());
 
     for c in vec![12, 22, 52, 380, 381, 382, 632, 197, 246, 564] {
         for _ in 0..3 {
@@ -489,6 +489,10 @@ fn main() {
    
     //sim.apply_action(Action::Player1(PlayerAction::RollForFirst))
     //sim.apply_action(gamestart::RollForFirst::new(PlayerId::Two));
+
+    //do_action(&mut sim, &Greet::new(PlayerId::One));
+    do_action(&mut sim, &phase::Start {});
+    
     do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::One));
     do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::One));
     do_action(&mut sim, &gamestart::RollForFirst::new(PlayerId::Two));

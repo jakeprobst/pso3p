@@ -26,7 +26,7 @@ pub enum DeckError {
 #[derive(Debug)]
 pub struct DeckBuilder {
     dtype: Option<DeckType>,
-    story_character: Option<Card>,
+    story_character: Option<CharacterCard>,
     cards: VecDeque<Card>,
 }
 
@@ -45,7 +45,7 @@ impl DeckBuilder {
         self
     }
     
-    pub fn character(mut self, sc: Card) -> DeckBuilder {
+    pub fn character(mut self, sc: CharacterCard) -> DeckBuilder {
         self.story_character = Some(sc);
         self
     }
@@ -70,7 +70,7 @@ impl DeckBuilder {
 
 #[derive(Debug)]
 pub struct Deck {
-    pub story_character: Card,
+    pub story_character: CharacterCard,
     pub dtype: DeckType,
     cards: VecDeque<Card>,
 }

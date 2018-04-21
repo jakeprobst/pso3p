@@ -25,14 +25,26 @@ pub struct PSO3State {
 }
 
 impl PSO3State {
-    pub fn get_player(&mut self, player: PlayerId) -> &mut Player {
+    pub fn get_player_mut(&mut self, player: PlayerId) -> &mut Player {
         match player {
             PlayerId::One => &mut self.player1,
             PlayerId::Two => &mut self.player2,
         }
     }
 
-    pub fn get_active_player(&mut self) -> &mut Player {
+    pub fn get_player(&self, player: PlayerId) -> &Player {
+        match player {
+            PlayerId::One => &self.player1,
+            PlayerId::Two => &self.player2,
+        }
+    }
+
+    pub fn get_active_player_mut(&mut self) -> &mut Player {
+        let ap = self.active_player; // shut up the borrow checker
+        self.get_player_mut(ap)
+    }
+
+    pub fn get_active_player(&self) -> &Player {
         let ap = self.active_player; // shut up the borrow checker
         self.get_player(ap)
     }
@@ -62,7 +74,8 @@ impl PSO3Simulation {
         p1deck.shuffle(&mut rng);
         p2deck.shuffle(&mut rng);
         PSO3Simulation {
-            phase: Phase::GameStart(GameStart::new()),
+            //phase: Phase::GameStart(GameStart::new()),
+            phase: Phase::Init,
             //phase: Box::new(GameStart::new()),
             state: PSO3State {
                 rng: rng,

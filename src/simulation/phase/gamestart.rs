@@ -23,9 +23,18 @@ impl GameStart {
             p2roll: None,
         }
     }
-
+    
     pub fn both_rolled(&self) -> bool {
         self.p1roll != None && self.p2roll != None
+    }
+
+    pub fn on_start(&self, state: &mut PSO3State) -> Vec<StateChange> {
+        let mut actions = Vec::new();
+
+        actions.push(StateChange::SetCharacter(state.boardstate.boardstate[&PlayerId::One].character.clone()));
+        actions.push(StateChange::SetCharacter(state.boardstate.boardstate[&PlayerId::Two].character.clone()));
+        
+        actions
     }
 }
 

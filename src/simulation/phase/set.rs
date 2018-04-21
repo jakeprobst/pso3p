@@ -1,8 +1,4 @@
-
-
-
-
-use player::Player;
+use player::{Player, PlayerId};
 use boardstate::PlayerBoardState;
 use phase::phase::{Phase, PhaseType};
 use action::{Action, PlayerAction};
@@ -10,7 +6,7 @@ use error::SimulationError;
 use statechange::StateChange;
 use pso3simulation::PSO3State;
 use card::{Card, CardId};
-use fieldobject::{Position, FieldObjectInstance};
+use fieldobject::{Position, ObjectId};
 
 #[derive(Debug)]
 pub struct Set;
@@ -22,6 +18,135 @@ impl Set {
         }
     }
 }
+
+
+
+#[derive(Debug)]
+struct SetMonsterCard {
+    player: PlayerId,
+    card: CardId,
+    pos: Position,
+}
+
+
+impl SetMonsterCard {
+    fn new(player: PlayerId, card: CardId, pos: Position) -> SetMonsterCard {
+        SetMonsterCard {
+            player: player,
+            card: card,
+            pos: pos,
+        }
+    }
+}
+
+
+impl Action for SetMonsterCard {
+    fn apply(&self, phase: &mut Phase, state: &mut PSO3State) -> Vec<StateChange> {
+        let player = state.get_active_player_mut();
+        let card = player.pop_card(self.card);
+        
+        
+        
+        Vec::new()
+    }
+
+    fn is_valid(&self, phase: &Phase, state: &PSO3State) -> bool {
+        if self.player != state.active_player {
+            return false;
+        }
+
+        let player = state.get_active_player();
+        let card = player.get_card(self.card);
+
+        if let Some(c) = card {
+            if let Card::Monster(ref monster) = c.card {
+                // TODO: costs, placement, etc checks
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            return false;
+        }
+        
+
+        return true;
+    }
+}
+
+
+#[derive(Debug)]
+struct SetItemCard {
+    player: PlayerId,
+    card: CardId,
+    target: ObjectId,
+}
+
+
+impl SetItemCard {
+    fn new(player: PlayerId, card: CardId, target: ObjectId) -> SetItemCard {
+        SetItemCard {
+            player: player,
+            card: card,
+            target: target,
+        }
+    }
+}
+
+impl Action for SetItemCard {
+    fn apply(&self, phase: &mut Phase, state: &mut PSO3State) -> Vec<StateChange> {
+        Vec::new()
+    }
+    fn is_valid(&self, phase: &Phase, state: &PSO3State) -> bool {
+        if self.player != state.active_player {
+            return false;
+        }
+
+        let player = state.get_active_player();
+        let cinst = match player.get_card(self.card) {
+            Some(c) => c,
+            None => return false,
+        };
+
+        let card = match cinst.card.as_item() {
+            Some(i) => i,
+            None => return false,
+        };
+        
+        //let target = player.get_card(self.card);
+        //let target = state.boardstate.get_object(self.target);
+
+        
+        //if self.player != 
+
+        /*if let Some(c) = card {
+            if let Card::Item(ref item) = c.card {
+                if player.atk >= item.cost {
+                    return false;
+                }
+                
+
+                
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            return false;
+        }*/
+        
+
+
+        false
+    }
+}
+
+
+struct SetAssistCard {
+}
+
 
 /*
 fn set_card(card_id: CardId, pos: Position, state: &mut PlayerBoardState, player: &mut Player)

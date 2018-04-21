@@ -120,9 +120,9 @@ impl Action for DiscardHand {
             if let Some(pstatus) = pregamediscard.player_status.get_mut(&self.player) {
                 pstatus.hand_status = HandStatus::ActedOn;
             }
-            let player = state.get_player(self.player);
+            let player = state.get_player_mut(self.player);
             for _ in 0..5 {
-                let cardinst = player.draw();
+                let cardinst = player.draw_card();
                 actions.push(StateChange::DrawCard {
                     player: player.id,
                     card: cardinst,
